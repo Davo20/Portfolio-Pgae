@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.task {
+  position: relative;
+  width: 80%;
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #e0dfd8;
+  border-radius: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.task .editCont {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.task .editCont h3 {
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+.task .editCont .editOpen {
+  width: 60%;
+  min-width: 300px;
+  height: auto;
+  background-color: #FFFEF2;
+  box-shadow: 1px 2px 6px 1px #2d0349;
+  border-radius: 10px;
+}
+.task .editCont .editOpen .editBtn {
+  width: 90%;
+}
+.task .editCont .formCont input {
+  width: 90%;
+}
+.task .formCont {
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+.task .formCont form {
+  width: 70%;
+  margin: 0 auto;
+}
+.task .formCont form div {
+  position: relative;
+}
+.task .formCont .req {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  display: inline-block;
+  color: rgb(219, 64, 64);
+}
+.task .formCont input {
+  width: 80%;
+  height: 30px;
+  margin: 5px auto;
+  border: 0.1px solid #2d0349;
+  outline: none;
+  background-color: #e0dfd8;
+  border-bottom: 2px solid #2d0349;
+}
+.task .formCont button {
+  display: block;
+  position: relative;
+  height: 40px;
+  margin: 10px auto;
+  outline: none;
+  border: 2px solid #2d0349;
+  color: #2d0349;
+  font-size: 15px;
+  font-weight: bold;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.3s ease-in;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.task .formCont button div {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: unset;
+  z-index: -1;
+  transition: 0.3s ease-in;
+  background-color: #2d0349;
+}
+.task .formCont button:hover {
+  color: #FFFEF2;
+}
+.task .formCont button:hover div {
+  left: 0;
+  right: unset;
+  width: 100%;
+}
+.task .formCont button:active {
+  transform: scale(1.02);
+}
+.task .formCont .phoneNumber {
+  width: 80%;
+  margin: 0 auto;
+}
+.task .addCont {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.task .addCont::-webkit-scrollbar {
+  width: 10px;
+}
+.task .addCont::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+.task .addCont::-webkit-scrollbar-thumb {
+  background: #c27dfc;
+  border-radius: 10px;
+}
+.task .addCont .done {
+  width: 95%;
+  height: auto;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #FFFEF2;
+  box-shadow: 1px 2px 10px 4px gray;
+  padding-bottom: 20px;
+}
+.task .addCont .done .userCont {
+  width: 95%;
+  margin: 5px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px gray;
+}
+.task .addCont .done .userCont .edit, .task .addCont .done .userCont .close {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 0 2px;
+  border-radius: 2px;
+  line-height: 30px;
+  box-shadow: 1px 1px 5px 1px black;
+}
+.task .addCont .done .userCont .edit:active, .task .addCont .done .userCont .close:active {
+  transform: scale(0.8);
+}
+.task .addCont .done .userCont .edit svg {
+  color: green;
+}
+.task .addCont .done .userCont .close svg {
+  color: red;
+}
+
+@media only screen and (min-width: 630px) {
+  button {
+    width: 200px;
+  }
+
+  .userCont {
+    height: 30px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  button {
+    width: 80%;
+  }
+
+  .req {
+    right: 1px;
+  }
+
+  .userCont {
+    width: 95%;
+    height: 120px;
+    margin: 2px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}/*# sourceMappingURL=task.css.map */

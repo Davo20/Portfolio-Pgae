@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section4{
+    width: 100%;
+    height: auto;
+    padding-bottom: 60px;
+    h3{
+        font-size: 55px;
+        text-align: center;
+    }
+    .contact{
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding-top: 30px;
+        width: 70%;
+        height: auto;
+        div{
+            display: flex;
+            flex-direction: column;
+            &:nth-child(1) svg{
+                color: #0ccc0c;
+            }
+            &:nth-child(2) svg{
+                color: black;
+            }
+            &:nth-child(3) svg{
+                color: green;
+            }
+            &:nth-child(4) svg{
+                color: blue;
+            }
+            div{
+                display: inline-block;
+                margin: 5px 0;
+                .phoneNumber{
+                    font-size: 12px;
+                    font-family: "Roboto", sans-serif;
+                    display: block;
+                    color: #696969;
+                }
+            }
+            svg{
+                font-size: 25px;
+            }
+        }
+        div span:nth-child(1){
+            font-size: 15px;
+            font-weight: 600;
+            font-family: "Roboto", sans-serif;
+        }
+        .inputContact{
+            input{
+                width: 250px;
+                display: block;
+                height: 40px;
+                margin: 10px auto;
+                border-radius: 5px;
+                border: 1px solid black;
+            }
+            textarea{
+                width: 250px;
+                display: block;
+                margin-top: 10px;
+                border-radius: 5px;
+                border: 1px solid black;
+            }
+            #submit{
+                position: relative;
+                height: 40px;
+                width: 100px;
+                background-color: #2d0349;
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                z-index: 1;
+                color: #FFFEF2;
+                font-size: 15px;
+                margin: 10px 0;
+                transition: width 0.5s;
+                span, svg{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: opacity 0.25s;
+                }
+                svg{
+                    opacity: 0;
+                }
+                &:focus{
+                    width: 40px;
+                    background-color: #44c08a;
+                    border-radius: 50%;
+                    span{
+                        opacity: 0;
+                    }
+                    svg{
+                        color: #FFFEF2;
+                        opacity: 1;
+                        transition-delay: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+    &.active{
+        background-color: rgb(14, 0, 20);
+        h3{
+            color: #FFFEF2;
+        }
+        .contact{
+            span:nth-child(1){
+                color: #FFFEF2;
+            }
+            
+            div:nth-child(2) svg{
+                color: #FFFEF2;
+            }
+            .inputContact{
+                input{
+                    background-color: #2d0349;
+                }
+            }
+            
+        }
+    }
+}
+
+@media only screen and (max-width: 640px){
+    section{
+        height: auto;
+        .contact{
+            flex-direction: column;
+            justify-content: space-around;
+            width: 100%;
+            text-align: center;
+            height: 100%;
+            .inputContact{
+                margin: 0 auto;
+                width: calc(100% - 200px)
+                input, textarea{
+                    width: calc(100% - 100px);
+                }
+
+                button{
+                    margin: 10px auto
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,154 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+.burger{
+    display: none;
+    width: 300px;
+    height: 100vh;
+    background-color: #2d0349;
+    position: absolute;
+    top: 60px;
+    right: -300px;
+    z-index: 4;
+    transition: 0.5s ease-in;
+    .navName{
+        height: 150px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        span{
+            display: block;
+            font-size: 20px;
+            color: #FFFEF2;
+        }
+        .border{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, #5b0974 0%, white 50%, #5b0974);
+        }
+    }
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    nav{
+        width: 100%;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        ul{
+            list-style-type: none;
+            .list2{
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                display: block;
+                a{
+                    position: relative;
+                    text-decoration: none;
+                    color: #FFFEF2;
+                    display: block;
+                    height: 50px;
+                    width: 300px;
+                    margin: 0 auto;
+                    line-height: 50px;
+                    li{
+                        width: 100%;
+                        height: 100%; 
+                        div{
+                            position: absolute;
+                            display: inline-block;
+                            width: 100%;
+                            height: 100%; 
+                            right: -300px;
+                            transition: 0.5s ease-in;
+                            opacity: 0.5;
+                        }
+                    }
+
+                    &:hover{
+                        div{
+                            background-color: rgb(14, 0, 20);
+                            right: 0;
+                        }
+                    }
+                }
+            }
+            .lang{
+                display: inline-block;
+                margin: 5px auto;
+                outline: none;
+                border: none;
+                height: 23px;
+                background-color: #2d0349;
+                color: #FFFEF2;
+                &:hover{
+                    border-bottom: 1px solid white;
+                }
+            }
+            .sunMoon{
+                // position: absolute;
+                right: 0;
+                display: flex;
+                width: 50%;
+                margin: 5px auto;
+                justify-content: space-around;
+                .fon{
+                    display: inline-block;
+                    width:60px;
+                    height: 30px;
+                    border-radius: 30px;
+                    border: 1px solid white;
+                    position: relative;
+                    span{
+                        position: absolute;
+                        width: 28px;
+                        height: 28px;
+                        // left: 1px;
+                        border-radius: 50%;
+                        background-color: green;
+                        transition: 0.5s ease-in-out;
+                        
+                    }
+                    .sun{
+                        position: absolute;
+                        left: 7px;
+                        top: 24%;
+                        color: white;
+                        z-index: -1;
+                    }
+                    .moon{
+                        position: absolute;
+                        right: 7px;
+                        top: 24%;
+                        z-index: -1;
+                        color: white;
+                    }
+                }
+                &.active{
+                    span{
+                        // position: absolute;
+                        // right: 1px;
+                        transform: translateX(30px);
+                    }
+                }
+                
+            }
+        }
+    }
+    &.active{
+        right: 0;
+    }
+}
+@media only screen and (max-width: 820px){
+    .burger{
+        display: block;
+    }
+}
