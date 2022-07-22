@@ -4,6 +4,8 @@ import Home from "./Home";
 import Burger from "./Burger";
 import "./header.scss";
 import dev from "./img/Dev.gif"
+import "./header.scss"
+
 
 export default function Header({open, setOpen, lang, langClick, fon, setFon}){
     return(
@@ -26,6 +28,7 @@ export default function Header({open, setOpen, lang, langClick, fon, setFon}){
                 <Home lang={lang}/>
                 <div className="animated"></div>
                 <div className="animatedTwo"></div>
+                
             </div>
         </header>
     )

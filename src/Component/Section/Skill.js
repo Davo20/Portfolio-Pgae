@@ -44,7 +44,7 @@ export default function Skill({lang, fon}){
             <h3 data-aos="zoom-in-down" data-aos-duration="500">{lang.skills}</h3>
             <div className="skill">
                 <div className="frontSkill">
-                    <div>{value.map((elem)=>{
+                    <div className="">{value.map((elem)=>{
                         return <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="500" className={elem.className} key={Math.random()}>
                             <div className="skillIcon">{elem.icon}</div>
                             <div className="skillName">

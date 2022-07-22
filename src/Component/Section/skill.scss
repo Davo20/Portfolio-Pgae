@@ -100,3 +100,13 @@
         transform: rotate(180deg)
     }
 }
+@media only screen and (max-width: 430px){
+    .skill{
+        .frontSkill{
+            .html, .css, .sass, .js, .react{
+
+                width: calc(100% - 30px)
+            }
+        }
+    }
+}

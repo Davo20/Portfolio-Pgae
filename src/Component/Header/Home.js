@@ -9,7 +9,6 @@ import {RiArrowDownLine} from "react-icons/ri"
 import { Typewriter } from "react-simple-typewriter";
 import "./header.scss"
 
-
 export default function Home({lang}){
     // useEffect(()=>{
     //     Aos.init()

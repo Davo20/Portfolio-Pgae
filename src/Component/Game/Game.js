@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import GameSq from "./GameSq"
 import "./game.scss";
+import Delete from "./Delete"
+import "./game.scss";
 const gameArr = [[],[],[]]
 let count = 0
 export default function Game(){
@@ -20,9 +22,11 @@ export default function Game(){
         
     }
     console.log(count)
-    const winnerFunc = () => {
+        
+    
+    const winnerFunc = () =>{
         count++
-        for(let i = 0; i < gameArr.length; i++){
+        for(let i = 0; i <gameArr.length; i++){
             if(gameArr[i][0] == gameArr[i][1] && gameArr[i][1] == gameArr[i][2] &&  gameArr[i][0]){
                 return gameArr[i][0]
                
@@ -73,6 +77,7 @@ export default function Game(){
                 <GameSq one = {2} two={2} squareState={game} gameClick = {squareClcik} del={deleteClick}/>
             </div>
         </div>
+        <button onClick={deleteClick}>Remove</button>
         
         </div>
     )

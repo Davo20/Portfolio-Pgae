@@ -32,6 +32,7 @@
         .editOpen{
             width: 60%;
             // min-width: 300px;
+            min-width: 300px;
             height: auto;
             background-color: #FFFEF2;
             box-shadow: 1px 2px 6px 1px #2d0349;
@@ -251,4 +252,5 @@
     .editOpen{
         width: calc(100% - 100px);
     }
+
 }
