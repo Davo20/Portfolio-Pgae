@@ -49,7 +49,7 @@ export default function Work({lang, fon}){
                     <Task lang={lang} fon={fon}/>
                 </div>
                 <div className="sliderThree">
-                    <Game/>
+                    <Game fon={fon}/>
                 </div>
                 <div className="sliderFour">
                     <GameTwo/>

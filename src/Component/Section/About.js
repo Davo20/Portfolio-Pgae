@@ -2,6 +2,7 @@ import React, {useEffect} from "react";
 import "./about.scss";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import aboutImg from "./img/aboutImg.jpg"
 
 
 export default function About({lang, fon}){
@@ -14,6 +15,7 @@ export default function About({lang, fon}){
             <h3 data-aos="zoom-in-down" data-aos-offset="100" data-aos-duration="500"  className="aboutName">{lang.about}</h3>
             <div className="about">
                 <div data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" className="aboutImg">
+                    <img src={aboutImg}></img>
                 </div>
                 <div data-aos="fade-left" data-aos-offset="95" data-aos-duration="1000" className="aboutText">
                     <p>{lang.aboutMe}</p>

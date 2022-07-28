@@ -5,7 +5,7 @@ import Delete from "./Delete"
 import "./game.scss";
 const gameArr = [[],[],[]]
 let count = 0
-export default function Game(){
+export default function Game({fon}){
   
     const [game, setGame] = useState("X")
     const [winner, setWinner]= useState()
@@ -60,24 +60,23 @@ export default function Game(){
             <div>
                 <h2 style = {count == 9 ? {color: "gray"} : {color: "green"}}>{winner}</h2>
             </div>
-        <div className="square">
-            <div className="boxOne">
+        <div className={"square " + (fon && "active")}>
+            <div className={"boxOne " + (fon && "active")}>
                 <GameSq one={0} two={0} squareState={game} gameClick = {squareClcik} del={deleteClick}/>
                 <GameSq one={0} two={1} squareState={game} gameClick = {squareClcik} del={deleteClick}/>
                 <GameSq one={0} two={2} squareState={game} gameClick = {squareClcik} del={deleteClick}/>
             </div>
-            <div className="boxTwo">
+            <div className={"boxTwo " + (fon && "active")}>
                 <GameSq one = {1} two={0} squareState={game} gameClick = {squareClcik} del={deleteClick}/>
                 <GameSq one = {1} two={1} squareState={game} gameClick = {squareClcik} del={deleteClick}/>
                 <GameSq one = {1} two={2} squareState={game} gameClick = {squareClcik} del={deleteClick}/>
             </div>
-            <div className="boxThree">
+            <div className={"boxThree " + (fon && "active")}>
                 <GameSq one = {2} two={0} squareState={game} gameClick = {squareClcik} del={deleteClick}/>
                 <GameSq one = {2} two={1} squareState={game} gameClick = {squareClcik} del={deleteClick}/>
                 <GameSq one = {2} two={2} squareState={game} gameClick = {squareClcik} del={deleteClick}/>
             </div>
         </div>
-        <button onClick={deleteClick}>Remove</button>
         
         </div>
     )

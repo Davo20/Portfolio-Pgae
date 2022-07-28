@@ -47,7 +47,9 @@ export default function Home({lang}){
                 </div>
             </div>
             <div data-aos="fade-left" data-aos-duration="2000"  className="img"></div> 
-            <RiArrowDownLine className="arrowDown"/>
+            <a className="arrowDown" href="#section">
+                <RiArrowDownLine />
+            </a>
         </div>
     )
 }
