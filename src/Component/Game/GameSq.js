@@ -1,6 +1,6 @@
 import React, { useState} from "react";
 
-export default function GameSq({gameClick, squareState, one, two, del}){
+export default function GameSq({gameClick, squareState, one, two, fon}){
     const [sq, setSq] = useState("")
     const handleClick = (e)=>{
         if(sq == ""){
@@ -16,6 +16,6 @@ export default function GameSq({gameClick, squareState, one, two, del}){
         }
     }
     return(
-        <div onClick={handleClick}>{sq}</div>
+        <div onClick={handleClick} className={"gameSq " + (fon && "active")}>{sq}</div>
     )
 }

@@ -62,19 +62,19 @@ export default function Game({fon}){
             </div>
         <div className={"square " + (fon && "active")}>
             <div className={"boxOne " + (fon && "active")}>
-                <GameSq one={0} two={0} squareState={game} gameClick = {squareClcik} del={deleteClick}/>
-                <GameSq one={0} two={1} squareState={game} gameClick = {squareClcik} del={deleteClick}/>
-                <GameSq one={0} two={2} squareState={game} gameClick = {squareClcik} del={deleteClick}/>
+                <GameSq one={0} two={0} squareState={game} gameClick = {squareClcik} fon={fon}/>
+                <GameSq one={0} two={1} squareState={game} gameClick = {squareClcik} fon={fon}/>
+                <GameSq one={0} two={2} squareState={game} gameClick = {squareClcik} fon={fon}/>
             </div>
             <div className={"boxTwo " + (fon && "active")}>
-                <GameSq one = {1} two={0} squareState={game} gameClick = {squareClcik} del={deleteClick}/>
-                <GameSq one = {1} two={1} squareState={game} gameClick = {squareClcik} del={deleteClick}/>
-                <GameSq one = {1} two={2} squareState={game} gameClick = {squareClcik} del={deleteClick}/>
+                <GameSq one = {1} two={0} squareState={game} gameClick = {squareClcik} fon={fon}/>
+                <GameSq one = {1} two={1} squareState={game} gameClick = {squareClcik} fon={fon}/>
+                <GameSq one = {1} two={2} squareState={game} gameClick = {squareClcik} fon={fon}/>
             </div>
             <div className={"boxThree " + (fon && "active")}>
-                <GameSq one = {2} two={0} squareState={game} gameClick = {squareClcik} del={deleteClick}/>
-                <GameSq one = {2} two={1} squareState={game} gameClick = {squareClcik} del={deleteClick}/>
-                <GameSq one = {2} two={2} squareState={game} gameClick = {squareClcik} del={deleteClick}/>
+                <GameSq one = {2} two={0} squareState={game} gameClick = {squareClcik} fon={fon}/>
+                <GameSq one = {2} two={1} squareState={game} gameClick = {squareClcik} fon={fon}/>
+                <GameSq one = {2} two={2} squareState={game} gameClick = {squareClcik} fon={fon}/>
             </div>
         </div>
         
