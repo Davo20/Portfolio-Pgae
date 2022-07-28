@@ -19,10 +19,10 @@ export default function App() {
   const [form, setForm] = useState([])
   const [lang, setLang] = useState(
     localStorage.getItem("lang")=="eng"?{
-    logo: "DAV",
     burgName: "David",
     burgLastName: " Balabekyan",
     home: "Home",
+    homeMyAbout: "I am Front-End Developer",
     about: "About",
     aboutMe: "I am a beginner Front-End programmer. I have been programming and graduated from Smart Technology Programming School.I'm able to learn quickly, work well in the team, ready to work and get experience.",
     skills: "Skills",
@@ -54,6 +54,7 @@ export default function App() {
   work: "Աշխատանք",
   contact: "Կապ",
   homeName: "Ողջույն ես Դավիթն եմ",
+  homeMyAbout: "Ես Front-End ծրագրավորող եմ",
   downBt: "Ներբեռնել CV",
   inputName: "Անուն",
   inputEmail: "Էլ․ Հասցե",
@@ -93,6 +94,7 @@ export default function App() {
         work: "Աշխատանք",
         contact: "Կապ",
         homeName: "Ողջույն ես Դավիթն եմ",
+        homeMyAbout: "Ես Front-End ծրագրավորող եմ",
         downBt: "Ներբեռնել CV",
         inputName: "Անուն",
         inputEmail: "Էլ․ Հասցե",
@@ -125,6 +127,7 @@ export default function App() {
         work: "Work",
         contact: "Contact",
         homeName: "Hello I am David",
+        homeMyAbout: "I am Front-End Developer",
         downBt: "Download CV",
         inputName: "Name",
         inputEmail: "e-mail",

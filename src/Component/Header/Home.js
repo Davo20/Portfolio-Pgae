@@ -32,7 +32,7 @@ export default function Home({lang}){
                     />
                 </h2>
                 <div className="download">
-                    <span>I am Front-End Developer</span>
+                    <span>{lang.homeMyAbout}</span>
                 </div>
             </div>
             <div data-aos="fade-left" data-aos-duration="2000"  className="img"></div> 
