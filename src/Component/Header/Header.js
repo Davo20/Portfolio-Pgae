@@ -3,7 +3,6 @@ import Nav from "./Nav"
 import Home from "./Home";
 import Burger from "./Burger";
 import "./header.scss";
-import dev from "./img/Dev.gif"
 import "./header.scss"
 import logo from "./img/logoPic.gif"
 
@@ -12,7 +11,6 @@ export default function Header({open, setOpen, lang, langClick, fon, setFon}){
     return(
         <header id="header" className="header">
             <div className={"head " + (open && "active")}>
-                {/* <h1>{lang.logo}</h1> */}
                 <img src={logo} className="logo"></img>
                 <Nav lang = {lang} langClick = {langClick} fon={fon} setFon={setFon}/>
                 
@@ -26,7 +24,6 @@ export default function Header({open, setOpen, lang, langClick, fon, setFon}){
                 </div>
             </div>
             <div className="home">
-                {/* <img src={dev}></img> */}
                 <Home lang={lang}/>
                 <div className="animated"></div>
                 <div className="animatedTwo"></div>

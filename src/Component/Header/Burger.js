@@ -33,7 +33,6 @@ export default function Burger({open, setOpen, lang, langClick, fon, setFon}){
                         </div>
                         <button onClick={langClick} className="lang">Eng | Հայ</button>
                     </div>
-                {/* <button onClick={langClick} className="lang">Eng | Հայ</button> */}
                 </ul>
             </nav>
         </div>

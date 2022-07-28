@@ -3,14 +3,9 @@ import Circular from "./Circular";
 import {AiFillHtml5} from "react-icons/ai";
 import {FaCss3, FaSass, FaReact} from "react-icons/fa";
 import {DiJavascript1} from "react-icons/di"
-// import Aos from "aos";
-// import "aos/dist/aos.css";
 import "./skill.scss";
 
 export default function Skill({lang, fon}){
-    // useEffect(()=>{
-    //     Aos.init()
-    // }, [])
     const [value, setValue] = useState([
         {
             className: "html",

@@ -1,18 +1,12 @@
 import React, {useEffect} from "react";
-import { BrowserRouter as Link } from "react-router-dom";
 import { MdAlternateEmail } from "react-icons/md"
-import {FaLinkedinIn, FaDownload} from "react-icons/fa"
+import {FaLinkedinIn} from "react-icons/fa"
 import {BsFillTelephoneFill} from "react-icons/bs"
 import {RiArrowDownLine} from "react-icons/ri"
-// import Aos from "aos";
-// import "aos/dist/aos.css";
 import { Typewriter } from "react-simple-typewriter";
 import "./header.scss"
 
 export default function Home({lang}){
-    // useEffect(()=>{
-    //     Aos.init()
-    // },[])
     return(
         <div className="homeContainer">
             
@@ -27,10 +21,6 @@ export default function Home({lang}){
                     <BsFillTelephoneFill/>
                 </a>
             </div>
-            <div className="downloadRs">
-                <a href="">{lang.downBt}</a>
-                <FaDownload/>
-            </div>
             <div className="myName">
                 <h2>
                 <Typewriter
@@ -42,8 +32,7 @@ export default function Home({lang}){
                     />
                 </h2>
                 <div className="download">
-                    <a href="#">{lang.downBt}</a>
-                    <FaDownload/>
+                    <span>I am Front-End Developer</span>
                 </div>
             </div>
             <div data-aos="fade-left" data-aos-duration="2000"  className="img"></div> 

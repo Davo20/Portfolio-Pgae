@@ -31,7 +31,6 @@
         }
         .editOpen{
             width: 60%;
-            // min-width: 300px;
             min-width: 300px;
             height: auto;
             background-color: #FFFEF2;
@@ -76,7 +75,6 @@
         .req{
             position: absolute;
             top: 10px;
-            // right: 10px;
             font-size: 20px;
             display: inline-block;
             color: rgb(219, 64, 64);
@@ -90,7 +88,6 @@
             outline: none;
             background-color: #e0dfd8;
             border-bottom: 2px solid #2d0349;
-            // background-color: #2d0349;
         }
         .addBtn, .editBtn{
             display: block;
@@ -235,7 +232,6 @@
         width:95%;
         height: 120px;
         margin: 2px auto;
-        // border: 2px solid black;
         display: flex;
         justify-content: space-between;
         flex-direction: column;

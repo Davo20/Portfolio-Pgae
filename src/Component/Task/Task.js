@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import Form from "./Form";
 import Edit from "./Edit/Edit";
-import {MdEdit, MdDone, MdClose} from "react-icons/md";
+import {MdEdit, MdClose} from "react-icons/md";
 import "./task.scss";
 
 
@@ -47,7 +47,6 @@ export default function Task ({lang, fon}){
            ]
            localStorage.setItem("id", +localStorage.getItem("id")+1)
            localStorage.setItem("todo", JSON.stringify([...JSON.parse(localStorage.getItem("todo")),...arr]))
-           // localStorage.setItem("todo", JSON.stringify([...JSON.parse(localStorage.getItem("todo"))], ...task))
            
            setTask(JSON.parse(localStorage.getItem("todo")))
            

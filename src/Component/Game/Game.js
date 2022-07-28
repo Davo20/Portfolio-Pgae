@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import GameSq from "./GameSq"
 import "./game.scss";
-import Delete from "./Delete"
 import "./game.scss";
 const gameArr = [[],[],[]]
 let count = 0

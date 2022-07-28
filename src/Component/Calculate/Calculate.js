@@ -6,7 +6,6 @@ import "./calc.scss";
 export default function Calculate(){
     const [calc, setCalc] = useState("")
     const handleClick = (e)=>{
-        // setCalc(elem=> elem+e.target.value).toString()
         if(e.target.value === "+" || e.target.value === "-" || e.target.value === "/" || e.target.value === "*" || e.target.value === "." || e.target.value === "%"){
             if(calc.slice(-1)==="+"){
                 if(calc.includes("+"))return
@@ -27,7 +26,6 @@ export default function Calculate(){
                 if(calc.includes("%"))return
             }
             else  if(calc[calc.length - 1] == "+" || calc[calc.length - 1] == "-"){
-                // let newCalc = calc.slice(0, calc.length - 1)
                 setCalc(calc.slice(0, calc.length - 1) + e.target.value)
                 
             }
@@ -35,17 +33,8 @@ export default function Calculate(){
                 setCalc(calc + e.target.value)
             }
         }
-        // else{
-        //     if(e.target.value == "+" || e.target.value =="-"){
-        //     if(calc[calc.length - 1] == "+" || calc[calc.length - 1] == "-"){
-        //         let newCalc = calc.slice(0, calc.length - 1)
-        //         setCalc(newCalc + e.target.value)
-                
-        //     }}
             else{
                 setCalc(calc + e.target.value)
-                
-            // }
         }
     }
 
