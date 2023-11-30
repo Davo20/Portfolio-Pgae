@@ -7,14 +7,14 @@ import "./header.scss"
 import logo from "./img/logoPic.gif"
 
 
-export default function Header({open, setOpen, lang, langClick, fon, setFon}){
+export default function Header({open, setOpen, lang, langClick, fon, setFon, setDark, dark}){
     return(
         <header id="header" className="header">
             <div className={"head " + (open && "active")}>
                 <img src={logo} className="logo"></img>
                 <Nav lang = {lang} langClick = {langClick} fon={fon} setFon={setFon}/>
                 
-                <Burger open = {open} setOpen={setOpen} lang={lang} langClick={langClick} fon={fon} setFon = {setFon}/>
+                <Burger open = {open} setOpen={setOpen} lang={lang} langClick={langClick} fon={fon} setFon = {setFon} setDark = {setDark} dark={dark}/>
                 <div className="bgCont">
                     <div className="burgerClick" onClick={()=>setOpen(!open)}>
                         <div className="bd1"></div>

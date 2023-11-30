@@ -97,7 +97,7 @@ export default function Task ({lang, fon}){
             <div className="addCont">
                 <div className={"done " + (fon && "active")}>
                     <h2>{lang.taskName}</h2>
-                    {task.map((elem)=>{
+                    {/* {task.map((elem)=>{
                         return (
                         <div key={Math.random()} className={"userCont " + (fon && "active")}>
                             <span>{elem.name}</span>
@@ -113,7 +113,29 @@ export default function Task ({lang, fon}){
                             </span>
                         </div>
                         )
-                    })}
+                    })} */}
+                    <table style={{width: "100%"}}>
+                        <tr>
+                            <th>Name</th>
+                            <th>Last Name</th>
+                            <th>Phone</th>
+                            <th>Options</th>
+                        </tr>
+                        {task.map((elem)=>{
+                            return <tr>
+                                <td>{elem.name}</td>
+                                <td>{elem.lastName}</td>
+                                <td>{elem.phoneNumber}</td>
+                                {/* <td><MdEdit onClick={editOpen} id = {elem.id}/> */}
+                                <td>
+                                <tr className="icon">
+                                    <td><MdEdit onClick={editOpen} id = {elem.id}/></td>
+                                    <td><MdClose onClick={delClick} id={elem.id} className="todo"/></td>
+                                </tr>
+                                </td>
+                            </tr>
+                        })}
+                    </table>
                 </div>
                 
             </div>

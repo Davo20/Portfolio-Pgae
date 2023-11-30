@@ -1,0 +1,138 @@
+nav{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 6;
+    div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #4497e3;
+        background-color: #3d73dd;
+        background-color: rgba(16,72,144,1);
+        h2{
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+        input{
+            width: 100%;
+            height: 35px;
+            outline: none;
+            border: none;
+            padding-left: 10px;
+        }
+        .basket{
+            a{
+                color: white;
+                text-decoration: none;
+                position: relative;
+            }
+            svg{
+                color: white;
+                font-size: 25px;
+            }
+            span{
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background-color: red;
+                border-radius: 10px;
+                text-align: center;
+                right: -5px;
+                line-height: 15px;
+                font-size: 10px;
+            }
+        }
+        .searchIcon{
+            display: none;
+            color: white;
+        }
+        .burgerShop{
+            svg{
+                color: white;
+                cursor: pointer;
+            }
+            .shopBurgerMenu{
+                // width: 25%;
+                height: calc(100vh - 60px);
+                background-color: rgb(50, 50, 227);
+                position: absolute;
+                top: 60px;
+                right: -100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition:  1s;
+                svg{
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+                ul{
+                    width: 100%;
+                    height: 80%;
+                    list-style-type: none;
+                    text-align: left;
+                    a{
+                        text-decoration: none;
+                        div{
+                            width: 100%;
+                            height: 50px;
+                            border-bottom: 1px solid rgb(222, 218, 218);
+                            background-color: rgb(50, 50, 227);
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            &:hover{
+                                background-color:rgb(29, 29, 220);
+                                background-color: rgb(222, 218, 218);
+                                background-color: white;
+                                li{
+                                    color: black;
+                                }
+                            }
+                            li{
+                                text-align: left;
+                                width: 90%;
+                                // height: 100%;
+                                color: white;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+            .burgerMenuOPen{
+                right: 0;
+                transition: 0.5s;
+                
+            }
+        }
+    }
+}
+@media only screen and (max-width: 400px){
+    .shopBurgerMenu{
+        width: 25%;
+    }
+}
+@media only screen and (max-width: 400px){
+    nav{
+        div{
+            input{
+                display: none;
+            }
+            .searchIcon{
+                display: block;
+            }
+        }
+    }
+    .shopBurgerMenu{
+        width: 80%;
+    }
+}

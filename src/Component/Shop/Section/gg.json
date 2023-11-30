@@ -1,0 +1,24 @@
+[
+    {
+        "tablets": [
+            {
+                "id": 1,
+                "general": [
+                    {
+                        "Warranty": "12 months",
+                        "model": "Samsung Galaxy Tab S9 FE+ 5G",
+                        "announcementYear": 2023,
+                        "operationSystem": "Android"
+                    }
+                ],
+                "display": [
+                    {
+                        "screenType": "Dynamic AMOLED 2X, 120Hz, HDR10+",
+                        "screenResolution": "1440 x 3088",
+                        "screenSize": "6.8 inch"
+                    }
+                ]
+            }
+        ]
+    }
+]

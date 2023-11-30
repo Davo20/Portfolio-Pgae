@@ -1,21 +1,18 @@
 import React, { useState} from "react";
 
-export default function GameSq({gameClick, squareState, one, two, fon}){
-    const [sq, setSq] = useState("")
+export default function GameSq({gameClick, squareState, one, two, fon, value}){
+    const [sq, setSq] = useState([])
+   
     const handleClick = (e)=>{
-        if(sq == ""){
-            setSq(squareState)
-            gameClick(one, two)
+
+            
+                setSq(squareState)
+                gameClick(one, two)
+            
+         console.log(sq)
         }
-        
-        if(squareState === "X"){
-            e.target.style.color = "red"
-        }
-        else{
-            e.target.style.color = "blue"
-        }
-    }
     return(
-        <div onClick={handleClick} className={"gameSq " + (fon && "active")}>{sq}</div>
+         <div onClick={handleClick}  className={"gameSq " + (fon && "active")}>{value}</div>
+         
     )
 }

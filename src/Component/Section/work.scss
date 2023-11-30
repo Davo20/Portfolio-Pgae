@@ -6,7 +6,8 @@
 .section3{
     width: 100%;
     height: auto;
-    background-color: #FFFEF2;
+    // background-color: #FFFEF2;
+    background-color: #e6e5de;
     padding-bottom: 30px;
     h3{
         font-size: 55px;
@@ -28,25 +29,26 @@
         }
         .left{
             height: 100px;
-            background-color: #e0dfd8;
+            background-color: #1e1e2a;
             position: absolute;
             left: 0;
             z-index: 2;
             opacity: 0.5;
             svg{
-                color: black;
+                color: #e6e5de;
                 font-size: 60px;
             }
         }
         .right{
             height: 100px;
-            background-color: #e0dfd8;
+            // background-color: #e0dfd8;
+            background-color: #1e1e2a;
             position: absolute;
             right: 0;
             z-index: 2;
             opacity: 0.5;
             svg{
-                color: black;
+                color: #e6e5de;
             }
         }
         .work{

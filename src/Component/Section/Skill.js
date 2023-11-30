@@ -5,7 +5,7 @@ import {FaCss3, FaSass, FaReact} from "react-icons/fa";
 import {DiJavascript1} from "react-icons/di"
 import "./skill.scss";
 
-export default function Skill({lang, fon}){
+export default function Skill({lang, fon, dark}){
     const [value, setValue] = useState([
         {
             className: "html",
@@ -35,7 +35,7 @@ export default function Skill({lang, fon}){
     ])
     
     return(
-        <section id="sectionSkill" className={"section2 " + (fon && "active")}>
+        <section id="sectionSkill" className={"section2 " + (dark && "active")}>
             <h3 data-aos="zoom-in-down" data-aos-duration="500">{lang.skills}</h3>
             <div className="skill">
                 <div className="frontSkill">

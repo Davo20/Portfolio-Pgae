@@ -1,0 +1,134 @@
+.productPage{
+    background-color: #cdced1;
+    padding-top: 60px;
+}
+.productHead{
+    width: 95%;
+    margin: 0 auto;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    .productPic{
+        height: 80%;
+        // width: 100%;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 100%;
+        }
+    }
+    .productMem{
+        background-color: white;
+        width: 40%;
+        height: auto;
+        p{
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .productInfo{
+            width: 100%;
+            display: flex;
+            justify-content: s;
+            margin-top: 20px;
+            text-align: left;
+            div{
+                width: 100%;
+                ul{
+                    list-style-type: none;
+                    li{
+                        margin-top: 5px;
+                    }
+                    .color{
+                        button{
+                            width: 20px;
+                            height: 20px;
+                            margin: 2px;
+                        }
+                    }
+                }
+            }
+        }
+        button{
+            width: 25%;
+            height: 30px;
+            background-color: rgb(50, 50, 227);
+            outline: none;
+            border: none;
+            margin-top: 20px;
+            color: white;
+            cursor: pointer;
+            &:hover{
+                background-color:rgb(29, 29, 220);
+            }
+        }
+    }
+}
+table{
+    width: 100%;
+    td{
+        border: 1px solid black;
+    }
+}
+.cardInfoCont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .infoName>div, .infoValues>div{
+        margin: 10px 2px;
+        height: 50px;
+        background-color: #E6E5DE;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+    }
+    .infoName{
+        width: 30%;
+        color: #3D424A
+    }
+    .infoValues{
+        width: 65%;
+    }
+}
+@media only screen and (max-width: 400px){
+    .productPage{
+        padding-top: 60px;
+        .productHead{
+            width: 95%;
+            margin: 0 auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding-bottom: 20px;
+            .productPic{
+                width: 70%;
+                img{
+                    width: 100%;
+                }
+            }
+            .productMem{
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .productInfo{
+                    div:nth-child(2){
+                        text-align: right;
+                    }
+                }
+            }
+        }
+        .cardInfoCont{
+            .infoName>div, .infoValues>div{
+                margin: 2px 1px;
+                height: 80px;
+                padding: 0 10px;
+            }
+        }
+    }
+}

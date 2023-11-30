@@ -1,0 +1,115 @@
+.basketCard{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+    border-bottom: 1px solid gray;
+    .basketPic{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .basketName{
+        width: 20%;
+        a{
+            text-decoration: none;
+            h4{
+                color: rgb(50, 50, 227);
+                &:hover{
+                    color: rgb(85, 85, 211);
+                }
+            }
+        }
+        
+    }
+    .basketCountCard{
+        width: 20%;
+        .decrement:hover, .increment:hover{
+            background-color: rgb(50, 50, 227);
+            color: white
+        }
+    }
+    .totalPrice{
+        width: 20%;
+        text-align: center;
+    }
+    .Remove{
+        width: 20%;
+        text-align: center;
+        button{
+            width: 100px;
+            height: 30px;
+            background-color: rgb(50, 50, 227);
+            border: none;
+            outline: none;
+            color: white;
+            cursor: pointer;
+            &:hover{
+                background-color:rgb(29, 29, 220);
+            }
+        }
+    }
+    img{
+        width: 70px;
+    }
+    h4{
+        color: black;
+        text-align: left;
+    }
+    span{
+        color: black;
+    }
+    .basketCountCard{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        button{
+            width: 30px;
+            height: 30px;
+            border: 1px solid gray;
+            border-radius: 30px;
+            text-align: center;
+            line-height: 30px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+    }
+}
+// @media only screen and (min-width: 400px){
+//     .basketCard{
+//         height: 100px;
+//         .basketPic{
+//             width: 20%;
+//         }
+//     }
+// }
+@media only screen and (max-width: 400px){
+    .basketCard{
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+        padding-bottom: 20px;
+        .basketPic{
+            width: 80%;
+            img{
+                width: 100%;
+            }
+        }
+        .basketName{
+            width: 80%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .basketCountCard, .totalPrice, .Remove{
+            width: 50%;
+        }
+    }
+}

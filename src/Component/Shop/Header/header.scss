@@ -1,0 +1,47 @@
+.productHeader{
+    width: 100%;
+    height: 80vh;
+    padding-top: 60px;
+    // overflow: hidden;
+    .sliderShopProductCont{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        svg{
+            position: absolute;
+            font-size: 50px;
+            z-index: 1;
+            color: black;
+        }
+        .leftProduct{
+            left: 0
+        }
+        .rightProduct{
+            right: 0;
+        }
+        .imageProductContainerShop{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            // overflow: hidden;
+            .imageSliderShopProduct{
+                min-width: 100%;
+                height: 100%;
+                overflow: hidden;
+                transition: 0.5s ease-in;
+                img{
+                    width: 100%;
+                    height: 100%;
+            }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 400px){
+    .productHeader{
+        height: 70vh;
+    }
+}

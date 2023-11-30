@@ -5,7 +5,7 @@ import "./footer.scss";
 
 export default function Footer({lang, langClick}){
     return(
-        <footer>
+        <footer className="footerr">
             <div className="footer">
                 <div>
                     <span>{lang.burgName}</span>

@@ -5,12 +5,12 @@ import "aos/dist/aos.css";
 import aboutImg from "./img/aboutImg.jpg"
 
 
-export default function About({lang, fon}){
+export default function About({lang, fon,  dark}){
     useEffect(()=>{
         Aos.init()
         }, [])
     return(
-        <section id="section" className={"sectionAbout " + (fon && "active")}>
+        <section id="section" className={"sectionAbout " + (dark && "active")}>
           
             <h3 data-aos="zoom-in-down" data-aos-offset="100" data-aos-duration="500"  className="aboutName">{lang.about}</h3>
             <div className="about">

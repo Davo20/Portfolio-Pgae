@@ -5,6 +5,13 @@ import Skill from "./Component/Section/Skill";
 import Work from "./Component/Section/Work";
 import Contact from "./Component/Section/Contact";
 import Footer from "./Component/Footer/Footer";
+import TicTakToe from "./Component/TicTakToe/TicTakToe";
+import Game from "./Component/Game/Game";
+import Shop from "./Component/Shop/Shop";
+// import Category from "./Component/Shop/Section/Section";
+// import Nav from "./Component/Shop/Nav/Nav"
+// import Esim from "../../zadaniya js/my-app/src/HomePage/Settings/Settings"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 if(!localStorage.getItem("lang")){
@@ -15,6 +22,8 @@ if(!localStorage.getItem("lang")){
 
 export default function App() {
   const [open, setOpen] = useState(false)
+  const resultTheme = JSON.parse(localStorage.getItem("them"))
+  const [dark, setDark] = useState(resultTheme)
   const [fon, setFon] = useState(false)
   const [form, setForm] = useState([])
   const [lang, setLang] = useState(
@@ -149,26 +158,44 @@ export default function App() {
     }
   }
   
-    const dd=(e)=>{
-        e.preventDefault();
-        const add=Array.from(new FormData(e.target))
+    // const dd=(e)=>{
+    //     e.preventDefault();
+    //     const add=Array.from(new FormData(e.target))
         
-           const obj = [{
-                name: add[0][1],
-                email: add[1][1],
-                message: add[2][1]
-            }]
-            setForm(obj) 
-        }
+    //        const obj = [{
+    //             name: add[0][1],
+    //             email: add[1][1],
+    //             message: add[2][1]
+    //         }]
+    //         setForm(obj) 
+    //     }
+    
+
+    useEffect(()=>{
+      localStorage.setItem("them", JSON.stringify(dark))
+  }, [dark])
   return(
     <main className="main">
-      <Header open = {open} setOpen = {setOpen} lang={lang} langClick={langClick} fon={fon} setFon={setFon}/>
-      <About lang={lang} fon={fon}/>
-      <Skill lang={lang} fon={fon}/>
-      <Work lang={lang} fon={fon}/>
-      <Contact send={dd} lang={lang} fon={fon}/>
-      <Footer lang={lang} langClick={langClick}/>
-
+      {/* <Header open = {open} setOpen = {setOpen} lang={lang} langClick={langClick} fon={fon} setFon={setFon} setDark={setDark} dark={dark}/>
+      <About lang={lang} fon={fon} dark = {dark}/>
+      <Skill lang={lang} fon={fon} dark={dark}/>
+  <Work lang={lang} fon={fon} dark={dark}/> */}
+      {/* <Contact send={dd} lang={lang} fon={fon}/> */}
+      {/* <Contact  lang={lang} fon={fon} dark={dark}/>
+      <Footer lang={lang} langClick={langClick}/> */}
+      {/* <TicTakToe/> */}
+      {/* <Game></Game> */}
+      {/* <Nav></Nav> */}
+      {/* <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Shop/>}></Route>
+                
+                
+              
+            </Routes>
+            </BrowserRouter> */}
+            <Shop></Shop>
+      
     </main>
   )
 }

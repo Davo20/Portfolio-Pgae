@@ -2,26 +2,26 @@ import React, {useState} from "react";
 import GameSq from "./GameSq"
 import "./game.scss";
 import "./game.scss";
-const gameArr = [[],[],[]]
+// const gameArr = [["","",""],["","",""],["","",""]]
 let count = 0
 export default function Game({fon}){
   
-    const [game, setGame] = useState("X")
-    const [winner, setWinner]= useState()
-    
+    const [game, setGame] = useState(true)
+    const [winner, setWinner]= useState("")
+    const [gameArr, setGameArr] = useState([["","",""],["","",""],["","",""]])
     const squareClcik = (one, two, e)=>{
-        setGame(square=> square == "X" ? "O" : "X")
-        gameArr[one][two] = game
-
+        // setGame(square=> square == "X" ? "O" : "X")
+        // gameArr[one][two] = game
+        const newArr = [...gameArr]
+        newArr[one][two] = game ? "X" : "O"
+        setGameArr(newArr)
+        setGame(!game)
         if(winnerFunc()){
-            setWinner(`${game} ${"Winner"}`)
-            setGame("")
+            setWinner(` ${"Winner"}`)
+            return
         }
-        
-        
-    }
-    console.log(count)
-        
+
+    }   
     
     const winnerFunc = () =>{
         count++
@@ -50,10 +50,10 @@ export default function Game({fon}){
         
     }
     const deleteClick =()=>{
-      
-       setGame("")
+    setGameArr([["","",""],["","",""],["","",""]])
+    setWinner("")
     }
-
+console.log(gameArr)
     return(
         <div>
             <div>
@@ -61,22 +61,22 @@ export default function Game({fon}){
             </div>
         <div className={"square " + (fon && "active")}>
             <div className={"boxOne " + (fon && "active")}>
-                <GameSq one={0} two={0} squareState={game} gameClick = {squareClcik} fon={fon}/>
-                <GameSq one={0} two={1} squareState={game} gameClick = {squareClcik} fon={fon}/>
-                <GameSq one={0} two={2} squareState={game} gameClick = {squareClcik} fon={fon}/>
+                <GameSq one={0} two={0} squareState={game} gameClick = {squareClcik}  fon={fon} value = {gameArr[0][0]}/>
+                <GameSq one={0} two={1} squareState={game} gameClick = {squareClcik}  fon={fon} value = {gameArr[0][1]}/>
+                <GameSq one={0} two={2} squareState={game} gameClick = {squareClcik}  fon={fon} value = {gameArr[0][2]}/>
             </div>
             <div className={"boxTwo " + (fon && "active")}>
-                <GameSq one = {1} two={0} squareState={game} gameClick = {squareClcik} fon={fon}/>
-                <GameSq one = {1} two={1} squareState={game} gameClick = {squareClcik} fon={fon}/>
-                <GameSq one = {1} two={2} squareState={game} gameClick = {squareClcik} fon={fon}/>
+                <GameSq one = {1} two={0} squareState={game} gameClick = {squareClcik}  fon={fon} value = {gameArr[1][0]}/>
+                <GameSq one = {1} two={1} squareState={game} gameClick = {squareClcik}  fon={fon} value = {gameArr[1][1]}/>
+                <GameSq one = {1} two={2} squareState={game} gameClick = {squareClcik}  fon={fon} value = {gameArr[1][2]}/>
             </div>
             <div className={"boxThree " + (fon && "active")}>
-                <GameSq one = {2} two={0} squareState={game} gameClick = {squareClcik} fon={fon}/>
-                <GameSq one = {2} two={1} squareState={game} gameClick = {squareClcik} fon={fon}/>
-                <GameSq one = {2} two={2} squareState={game} gameClick = {squareClcik} fon={fon}/>
+                <GameSq one = {2} two={0} squareState={game} gameClick = {squareClcik}  fon={fon} value = {gameArr[2][0]}/>
+                <GameSq one = {2} two={1} squareState={game} gameClick = {squareClcik}  fon={fon} value = {gameArr[2][1]}/>
+                <GameSq one = {2} two={2} squareState={game} gameClick = {squareClcik}  fon={fon} value = {gameArr[2][2]}/>
             </div>
         </div>
-        
+        <button onClick={deleteClick} className="reset">Reset</button>
         </div>
     )
 }

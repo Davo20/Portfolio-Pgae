@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {BsSunFill, BsMoonFill} from "react-icons/bs";
 import "./burger.scss"
 
-export default function Burger({open, setOpen, lang, langClick, fon, setFon}){
+export default function Burger({open, setOpen, lang, langClick, fon, setFon, setDark, dark}){
    
     
     return(
@@ -16,7 +16,7 @@ export default function Burger({open, setOpen, lang, langClick, fon, setFon}){
                 </div>
                 <div className="border"></div>
             </div>
-            <nav>
+            <nav className="nav">
                 <ul>
                     <div className="list2">
                         <a href="#header" onClick={()=>setOpen()}><li>{lang.home}<div></div></li></a>
@@ -25,11 +25,12 @@ export default function Burger({open, setOpen, lang, langClick, fon, setFon}){
                         <a href="#sectionWork" onClick={()=>setOpen()}><li>{lang.work}<div></div></li></a>
                         <a href="#sectionContact" onClick={()=>setOpen()}><li>{lang.contact}<div></div></li></a>
                     </div>
-                    <div className={"sunMoon " + (fon && "active")}>
+                    <div className={"sunMoon " + (dark && "active")}>
                         <div className="fon">
-                            <span className="ball" onClick={()=>setFon(!fon)}></span>
-                            <BsSunFill className="sun"/>
-                            <BsMoonFill className="moon"/>
+                            {/* <span className="ball" onClick={()=>setFon(!fon)}></span> */}
+                            <span className="ball"></span>
+                            <BsSunFill className="sun" onClick={()=>setDark(false)}/>
+                            <BsMoonFill className="moon" onClick={()=>setDark(true)}/>
                         </div>
                         <button onClick={langClick} className="lang">Eng | Հայ</button>
                     </div>

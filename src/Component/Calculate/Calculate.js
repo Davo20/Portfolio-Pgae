@@ -1,11 +1,14 @@
 import React, {useState} from "react";
-import {IoMdCloseCircleOutline} from "react-icons/io"
+import {IoMdCloseCircleOutline} from "react-icons/io";
+import { Textfit } from 'react-textfit';
 
 import "./calc.scss";
 
 export default function Calculate(){
     const [calc, setCalc] = useState("")
+    const [tokos, setTokos] = useState()
     const handleClick = (e)=>{
+        setTokos(e.target.value)
         if(e.target.value === "+" || e.target.value === "-" || e.target.value === "/" || e.target.value === "*" || e.target.value === "." || e.target.value === "%"){
             if(calc.slice(-1)==="+"){
                 if(calc.includes("+"))return
@@ -25,10 +28,11 @@ export default function Calculate(){
             else if(calc.slice(-1) === "%"){
                 if(calc.includes("%"))return
             }
-            else  if(calc[calc.length - 1] == "+" || calc[calc.length - 1] == "-"){
-                setCalc(calc.slice(0, calc.length - 1) + e.target.value)
+            // else  if(calc[calc.length - 1] == "+" || calc[calc.length - 1] == "-"){
+            //     setCalc(calc.slice(0, calc.length - 1) + e.target.value)
                 
-            }
+            // }
+            
             else{
                 setCalc(calc + e.target.value)
             }
@@ -36,6 +40,13 @@ export default function Calculate(){
             else{
                 setCalc(calc + e.target.value)
         }
+        if(e.target.value == "%"){
+            setCalc(eval(calc) / 100)
+        }
+        //   if(calc[calc.length - 1] == "+" || calc[calc.length - 1] == "-"){
+        //         setCalc(calc.slice(0, calc.length - 1) + e.target.value)
+                
+        //     } 
     }
 
 
@@ -45,7 +56,7 @@ export default function Calculate(){
         setCalc("")
     }
     const handleResult=()=>{
-            setCalc(eval(calc).toString())  
+        setCalc(eval(calc).toString())  
     }
    const invertClick = ()=>{
        setCalc((eval(calc) * -1).toString())
@@ -55,9 +66,10 @@ export default function Calculate(){
    }
     return(
         <div className="calculiator">
-            <form>
+            <Textfit className="monitor"  mode="single">{calc}</Textfit>
+            {/* <form>
                 <input type="text" className="monitor" value={calc}/>
-            </form>
+            </form> */}
             <div className="keyboard">
                 <button onClick={valueDelete}>C</button>
                 <button value="%" onClick={handleClick}>%</button>
@@ -77,7 +89,7 @@ export default function Calculate(){
                 <button value="-/+" onClick={invertClick}>&plusmn;</button>
                 <button value="0" onClick={handleClick}>0</button>
                 <button value="." onClick={handleClick}>.</button>
-                <button onClick={handleResult}>=</button>
+                <button onClick={handleResult} className="result">=</button>
                 <IoMdCloseCircleOutline onClick={lenghtDel}/>
             </div>
         </div>

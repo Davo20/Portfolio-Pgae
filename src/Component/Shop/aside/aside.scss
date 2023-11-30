@@ -1,0 +1,36 @@
+aside{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(222, 218, 218);
+    div{
+        width: 100%;
+        height: 100%;
+        ul{
+            width: 80%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2px;
+            list-style-type: none;
+            margin: 0 auto;
+            padding-top: 2px;
+            a{
+                text-decoration: none;
+                color: black;
+                li{
+                    height: 90%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: white;
+                    &:hover{
+                        background-color: rgb(50, 50, 227);
+                        svg{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

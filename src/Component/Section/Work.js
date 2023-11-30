@@ -7,7 +7,7 @@ import  GameTwo from "../GameTwo/GameTwo"
 import {IoIosArrowBack, IoIosArrowForward} from "react-icons/io"
 import "./work.scss";
 
-export default function Work({lang, fon}){
+export default function Work({lang, fon, dark}){
     const slider = useRef(null)
    
     let active = 0
@@ -37,7 +37,7 @@ export default function Work({lang, fon}){
     }
     return(
       
-        <section id="sectionWork" className={"section3 " + (fon && "active")}>
+        <section id="sectionWork" className={"section3 " + (dark && "active")}>
             <h3 data-aos="zoom-in-down">{lang.work}</h3>
             <div className="sliderCont">
             <div onClick={left} className="left"> <IoIosArrowBack /></div>
