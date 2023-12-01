@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {IoMdCloseCircleOutline} from "react-icons/io";
-import { Textfit } from 'react-textfit';
+// import { Textfit } from 'react-textfit';
 
 import "./calc.scss";
 
@@ -66,7 +66,7 @@ export default function Calculate(){
    }
     return(
         <div className="calculiator">
-            <Textfit className="monitor"  mode="single">{calc}</Textfit>
+            {/* <Textfit className="monitor"  mode="single">{calc}</Textfit> */}
             {/* <form>
                 <input type="text" className="monitor" value={calc}/>
             </form> */}
