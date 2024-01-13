@@ -1,8 +1,12 @@
 [
     {
         "id": 67,
+        "phoneName": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB",
         "model": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD",
-        "img": "images/appleMacbookAir15inchM2(MQKX3)Midnght.png",
+        "img": {
+            "img1": "images/appleMacbookAir15inchM2(MQKX3)Midnght.png",
+            "img2": "images/appleMacbookAir15inchM2(MQKX3)Midnght2.png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 767900,
         "screenResolution": "2880 × 1864",
@@ -16,12 +20,17 @@
         "Bluetooth": "Yes",
         "WiFiNetwork": "Yes",
         "BatteryType": "35W MagSafe; 70W USB-C",
-        "size": "13.40 x 9.53 x 0.45 inches"
+        "size": "13.40 x 9.53 x 0.45 inches",
+        "color": "Midnightblue"
     },
     {
         "id": 68,
+        "phoneName": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 256GB",
         "model": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 256GB SSD",
-        "img": "images/appleMacbookAir15inchM2-256GB(MQKP3)SpaceGray.png",
+        "img": {
+            "img1": "images/appleMacbookAir15inchM2-256GB(MQKP3)SpaceGray.png",
+            "img2": "images/appleMacbookAir15inchM2-256GB(MQKP3)SpaceGray2.png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 666900,
         "screenResolution": "2880 × 1864",
@@ -35,12 +44,16 @@
         "Bluetooth": "Yes",
         "WiFiNetwork": "Yes",
         "BatteryType": "35W MagSafe; 70W USB-C",
-        "size": "13.40 x 9.53 x 0.45 inches"
+        "size": "13.40 x 9.53 x 0.45 inches",
+        "color": "Gray"
     },
     {
         "id": 69,
+        "phoneName": "Apple Macbook Pro 16 inch with Apple M2 Pro chip with 12-core CPU and 19-core GPU 512GB",
         "model": "Apple Macbook Pro 16 inch with Apple M2 Pro chip with 12-core CPU and 19-core GPU 512GB SSD",
-        "img": "images/appleMAcbookPro16inchM2Pro512GB(SpaceGray).png",
+        "img": {
+            "img1": "images/appleMAcbookPro16inchM2Pro512GB(SpaceGray).png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 1299900,
         "screenSize": "16 inch (40.64 cm)",
@@ -52,12 +65,16 @@
         "CPU": "12-core",
         "HardDriveType": "SSD",
         "Bluetooth": "Yes",
-        "WiFiNetwork": "Yes"
+        "WiFiNetwork": "Yes",
+        "color": "Gray"
     },
     {
         "id": 70,
+        "phoneName": "Apple Macbook Pro 14 inch with Apple M1 Pro chip with 10-core CPU and 16-core GPU/1TB",
         "model": "Apple Macbook Pro 14 inch with Apple M1 Pro chip with 10-core CPU and 16-core GPU/1TB SSD",
-        "img": "images/appleMacpookPro14M1Pro1TB(SpaceGray).png",
+        "img": {
+            "img1": "images/appleMacpookPro14M1Pro1TB(SpaceGray).png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 1099900,
         "screenSize": "14 inch (35.5 cm)",
@@ -71,12 +88,17 @@
         "Bluetooth": "Yes",
         "WiFiNetwork": "Yes",
         "Microphone": "Yes",
-        "Speakers": "Yes"
+        "Speakers": "Yes",
+        "color": "Gray"
     },
     {
         "id": 71,
+        "phoneName": "Apple Macbook Pro 14 inch Apple M1 Pro chip with 8-core CPU and 14-core GPU/16GB RAM/512GB",
         "model": "Apple Macbook Pro 14 inch Apple M1 Pro chip with 8-core CPU and 14-core GPU/16GB RAM/512GB SSD",
-        "img": "images/appleMacbookPro14M1Pro512GB(SpaceGray).png",
+        "img": {
+            "img1": "images/appleMacbookPro14M1Pro512GB(SpaceGray).png",
+            "img2": "images/appleMacbookPro14M1Pro512GB(SpaceGray)2.png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 769900,
         "screenSize": "14 inch (35.5 cm)",
@@ -89,12 +111,16 @@
         "Bluetooth": "Yes",
         "WiFiNetwork": "Yes",
         "Microphone": "Yes",
-        "Speakers": "Yes"
+        "Speakers": "Yes",
+        "color": "Gray"
     },
     {
         "id": 72,
+        "phoneName": "Apple Macbook Pro 16 inch/Apple M1 Pro chip with 10-core CPU and 16-core GPU/512GB",
         "model": "Apple Macbook Pro 16 inch/Apple M1 Pro chip with 10-core CPU and 16-core GPU/512GB SSD",
-        "img": "images/appleMacbookPro16M1Pro512GB(Silver).png",
+        "img": {
+            "img1": "images/appleMacbookPro16M1Pro512GB(Silver).png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 814900,
         "screenSize": "16 inch (40.64 cm)",
@@ -107,12 +133,16 @@
         "Interfaces": "140W USB-C, HDMI, SDXC, MagSafe 3",
         "Bluetooth": "Yes",
         "WiFiNetwork": "Yes",
-        "WebCamera": "Yes"
+        "WebCamera": "Yes",
+        "color": "Silver"
     },
     {
         "id": 73,
+        "phoneName": "Apple Macbook Air 13 inch with M2 chip 256GB",
         "model": "Apple Macbook Air 13 inch with M2 chip 256GB",
-        "img": "images/appleMacbookAir13M@-256GB(SpaceGray).png",
+        "img": {
+            "img1": "images/appleMacbookAir13M@-256GB(SpaceGray).png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 599900,
         "screenSize": "13 inch (33 cm)",
@@ -129,12 +159,16 @@
         "WiFiNetwork": "Yes",
         "BatteryType": "30W USB-C Power Adapter",
         "WebCamera": "Yes",
-        "size": "30.41 x 21.5 x 1.13 cm"
+        "size": "30.41 x 21.5 x 1.13 cm",
+        "color": "Gray"
     },
     {
         "id": 74,
+        "phoneName": "PC Notebook Lenovo V15 G2 Intel Core i5 1135G7 256GB",
         "model": "PC Notebook Lenovo V15 G2 Intel Core i5 1135G7 256GB +Bag",
-        "img": "images/lenovoV15Corei5-256GB(Black).png",
+        "img": {
+            "img1": "images/lenovoV15Corei5-256GB(Black).png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 289900,
         "screenResolution": "1920x1080",
@@ -149,12 +183,16 @@
         "Bluetooth": "Yes",
         "WiFiNetwork": "Yes",
         "Microphone": "Yes",
-        "Speakers": "Yes"
+        "Speakers": "Yes",
+        "color": "Black"
     },
     {
         "id": 75,
+        "phoneName": "PC Notebook Lenovo V15 G2 Intel Core i5 1135G7 256GB +Bag",
         "model": "PC Notebook Lenovo V15 G2 Intel Core i5 1135G7 256GB +Bag",
-        "img": "images/lenovoV15G2Corei5-256GB(Black).png",
+        "img": {
+            "img1": "images/lenovoV15G2Corei5-256GB(Black).png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 279900,
         "screenResolution": "1920x1080",
@@ -169,12 +207,16 @@
         "Bluetooth": "Yes",
         "WiFiNetwork": "Yes",
         "Microphone": "Yes",
-        "Speakers": "Yes"
+        "Speakers": "Yes",
+        "color": "Black"
     },
     {
         "id": 76,
+        "phoneName": "PC Notebook Lenovo V15 G2 Intel Core i3 1115G4 256GB",
         "model": "PC Notebook Lenovo V15 G2 Intel Core i3 1115G4 256GB",
-        "img": "images/lenovoV15G2Corei3-256GB(Gray).png",
+        "img": {
+            "img1": "images/lenovoV15G2Corei3-256GB(Gray).png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 209900,
         "screenResolution": "1920x1080",
@@ -187,12 +229,16 @@
         "HardDriveType": "SSD",
         "BluetoothType": "Bluetooth 5.0",
         "Bluetooth": "Yes",
-        "WiFiNetwork": "Yes"
+        "WiFiNetwork": "Yes",
+        "color": "Gray"
     },
     {
         "id": 77,
+        "phoneName": "PC Notebook Lenovo ThinkPad E15 Gen 4 Intel Core i5 1235U 256GB",
         "model": "PC Notebook Lenovo ThinkPad E15 Gen 4 Intel Core i5 1235U 256GB",
-        "img": "images/lenovoThinkPadE15Gen4Corei5-256GB(Black).png",
+        "img": {
+            "img1": "images/lenovoThinkPadE15Gen4Corei5-256GB(Black).png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 469900,
         "screenSize": "15.6 inch (39.6 cm)",
@@ -203,12 +249,16 @@
         "CPU": "Intel Core i5 1235U",
         "HardDriveType": "SSD",
         "Bluetooth": "Yes",
-        "WiFiNetwork": "Yes"
+        "WiFiNetwork": "Yes",
+        "color": "Black"
     },
     {
         "id": 78,
+        "phoneName": "PC Notebook LENOVO ThinkBook 14 G4 IAP 512GB",
         "model": "PC Notebook LENOVO ThinkBook 14 G4 IAP",
-        "img": "images/lenovoThinkBook14G4IAP(MineralGray).png",
+        "img": {
+            "img1": "images/lenovoThinkBook14G4IAP(MineralGray).png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 449900,
         "screenResolution": "1920x1080",
@@ -220,12 +270,16 @@
         "CPU": "Intel Core i5-1235U",
         "HardDriveType": "SSD",
         "Bluetooth": "Yes",
-        "WiFiNetwork": "Yes"
+        "WiFiNetwork": "Yes",
+        "color": "Gray"
     },
     {
         "id": 79,
+        "phoneName": "PC Notebook LENOVO IdeaPad 3 512GB",
         "model": "PC Notebook LENOVO IdeaPad 3 512GB",
-        "img": "images/lenovoIdeaPad3-512GB(Gray).png",
+        "img": {
+            "img1": "images/lenovoIdeaPad3-512GB(Gray).png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 459900,
         "screenResolution": "1920x1080",
@@ -237,12 +291,16 @@
         "CPU": "Intel Core i7-1255U",
         "HardDriveType": "SSD",
         "Bluetooth": "Yes",
-        "WiFiNetwork": "Yes"
+        "WiFiNetwork": "Yes",
+        "color": "Gray"
     },
     {
         "id": 80,
+        "phoneName": "PC Notebook LENOVO IdeaPad 3 15IAU7 512GB",
         "model": "PC Notebook LENOVO IdeaPad 3 15IAU7 512GB",
-        "img": "images/lenovoIdeaPad3-15IAU7-512GB(Gray).png",
+        "img": {
+            "img1": "images/lenovoIdeaPad3-15IAU7-512GB(Gray).png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 379900,
         "screenResolution": "1920x1080",
@@ -253,12 +311,16 @@
         "CPU": "Intel Core i5-1235U",
         "HardDriveType": "SSD",
         "Bluetooth": "Yes",
-        "WiFiNetwork": "Yes"
+        "WiFiNetwork": "Yes",
+        "color": "Gray"
     },
     {
         "id": 81,
+        "phoneName": "LENOVO Legion SO-DIMM DDR4-2666 17.3 FHD 8GB/512GB",
         "model": "LENOVO Legion SO-DIMM DDR4-2666 17.3 FHD 8GB/512GB GTX 1660 Ti 6GB GDDR6 81Q400FHRE",
-        "img": "images/lenovoLegion(RavenBlack).jpg",
+        "img": {
+            "img1": "images/lenovoLegion(RavenBlack).jpg"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 815900,
         "screenSize": "17.3 inch (43.9 cm)",
@@ -268,12 +330,16 @@
         "type": "Notebook",
         "HardDriveType": "SSD",
         "Bluetooth": "Yes",
-        "WiFiNetwork": "Yes"
+        "WiFiNetwork": "Yes",
+        "color": "Black"
     },
     {
         "id": 82,
+        "phoneName": "PC Notebook HP ProBook 450 G8 Intel Core i7 1165G7 512GB",
         "model": "PC Notebook HP ProBook 450 G8 Intel Core i7 1165G7 512GB",
-        "img": "images/HPProBook450G8Corei7-512GB(Silver).png",
+        "img": {
+            "img1": "images/HPProBook450G8Corei7-512GB(Silver).png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 479900,
         "screenSize": "15.6 inch (39.6 cm)",
@@ -284,12 +350,16 @@
         "CPU": "Intel Core i7 1165G7",
         "HardDriveType": "SSD",
         "Bluetooth": "Yes",
-        "WiFiNetwork": "Yes"
+        "WiFiNetwork": "Yes",
+        "color": "Silver"
     },
     {
         "id": 83,
+        "phoneName": "PC Notebook HP 14S-DQ5003NIA Intel Core i3 1215U 256GB",
         "model": "PC Notebook HP 14S-DQ5003NIA Intel Core i3 1215U 256GB",
-        "img": "images/HP14S-DQ5003NIACorei3-256GB(Black).png",
+        "img": {
+            "img1": "images/HP14S-DQ5003NIACorei3-256GB(Black).png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 229900,
         "screenSize": "14 inch (35.5 cm)",
@@ -302,12 +372,16 @@
         "BluetoothType": "Bluetooth: 4.2",
         "Bluetooth": "Yes",
         "WiFiType": "Wi-Fi 5 (1x1)",
-        "WiFiNetwork": "Yes"
+        "WiFiNetwork": "Yes",
+        "color": "Black"
     },
     {
         "id": 84,
+        "phoneName": "PC Notebook HP 250 G9 Intel Core i5-1235U 256GB",
         "model": "PC Notebook HP 250 G9 Intel Core i5-1235U 256GB",
-        "img": "images/HP250G9Corei5-256GB(Black).png",
+        "img": {
+            "img1": "images/HP250G9Corei5-256GB(Black).png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 339900,
         "screenResolution": "1920 x 1080",
@@ -319,12 +393,15 @@
         "CPU": "Intel Core i5-1235U",
         "HardDriveType": "SSD",
         "Bluetooth": "Yes",
-        "WiFiNetwork": "Yes"
+        "WiFiNetwork": "Yes",
+        "color": "Black"
     },
     {
         "id": 85,
         "model": "PC Notebook HP 15S 512GB",
-        "img": "images/HP15S512GB(NaturalSilver).png",
+        "img": {
+            "img1": "images/HP15S512GB(NaturalSilver).png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 289900,
         "screenSize": "15.6 inch (39.6 cm)",
@@ -340,7 +417,9 @@
     {
         "id": 86,
         "model": "PC Notebook HP 15-DY2795WM Intel Core i5 1135G7 256GB",
-        "img": "images/HP15Corei5-1135G7-256GB(Silver).png",
+        "img": {
+            "img1": "images/HP15Corei5-1135G7-256GB(Silver).png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 309900,
         "screenSize": "15.6 inch (39.6 cm)",
@@ -355,8 +434,11 @@
     },
     {
         "id": 87,
+        "phoneName": "PC Notebook Acer Aspire 3 A315-59G-77YF 512GB",
         "model": "PC Notebook Acer Aspire 3 A315-59G-77YF 512GB",
-        "img": "images/acerAspire3A315-59G-77YF512GB(MoonstonePurple).png",
+        "img": {
+            "img1": "images/acerAspire3A315-59G-77YF512GB(MoonstonePurple).png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 449900,
         "screenResolution": "1920 x 1080",
@@ -368,12 +450,16 @@
         "CPU": "Intel Core i7-1255U",
         "HardDriveType": "SSD",
         "Bluetooth": "Yes",
-        "WiFiNetwork": "Yes"
+        "WiFiNetwork": "Yes",
+        "color": "Purple"
     },
     {
         "id": 88,
+        "phoneName": "PC Notebook Acer Aspire 3 A315-534T 512GB",
         "model": "PC Notebook Acer Aspire 3 A315-534T 512GB",
-        "img": "images/acerAspire3A315-534T512GB(MoonstonePurple).png",
+        "img": {
+            "img1": "images/acerAspire3A315-534T512GB(MoonstonePurple).png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 339900,
         "screenResolution": "1920 x 1080",
@@ -385,12 +471,16 @@
         "CPU": "Intel Core i5-1235U",
         "HardDriveType": "SSD",
         "Bluetooth": "Yes",
-        "WiFiNetwork": "Yes"
+        "WiFiNetwork": "Yes",
+        "color": "Purple"
     },
     {
         "id": 89,
+        "phoneName": "PC Notebook Acer Aspire 3 A315-59-55KQ 256GB",
         "model": "PC Notebook Acer Aspire 3 A315-59-55KQ 256GB",
-        "img": "images/acerAspire3A315-59-55KQ256GB(PureSilver).png",
+        "img": {
+            "img1": "images/acerAspire3A315-59-55KQ256GB(PureSilver).png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 329900,
         "screenResolution": "1920 x 1080",
@@ -402,12 +492,16 @@
         "CPU": "Intel Core i5-1235U",
         "HardDriveType": "SSD",
         "Bluetooth": "Yes",
-        "WiFiNetwork": "Yes"
+        "WiFiNetwork": "Yes",
+        "color": "Silver"
     },
     {
         "id": 90,
+        "phoneName": "PC Notebook Acer Aspire 3 Intel Core i3 1005G1 1TB",
         "model": "PC Notebook Acer Aspire 3 Intel Core i3 1005G1 1TB",
-        "img": "images/acerAspire3Corei3-1TB(Black).png",
+        "img": {
+            "img1": "images/acerAspire3Corei3-1TB(Black).png"
+        },
         "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
         "price": 199900,
         "screenResolution": "1920 x 1080",
@@ -418,6 +512,166 @@
         "CPU": "Intel Core i3 1005G1",
         "HardDriveType": "HDD",
         "Bluetooth": "Yes",
-        "WiFiNetwork": "Yes"
+        "WiFiNetwork": "Yes",
+        "color": "Black"
+    },
+    {
+        "id": 218,
+        "phoneName": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB",
+        "model": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD",
+        "img": {
+            "img1": "images/appleMacbookAir15inchM2(MQKX3)Silver.png",
+            "img2": "images/appleMacbookAir15inchM2(MQKX3)Silver2.png"
+        },
+        "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
+        "price": 767900,
+        "screenResolution": "2880 × 1864",
+        "screenSize": "15 inch (38,1 cm)",
+        "HardDriveCapacity": "512GB",
+        "RAM": "8GB",
+        "OSVersion": "macOS",
+        "type": "Notebook",
+        "CPU": "8-core CPU and 10-core GPU",
+        "HardDriveType": "SSD",
+        "Bluetooth": "Yes",
+        "WiFiNetwork": "Yes",
+        "BatteryType": "35W MagSafe; 70W USB-C",
+        "size": "13.40 x 9.53 x 0.45 inches",
+        "color": "Silver"
+    },
+    {
+        "id": 219,
+        "phoneName": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB",
+        "model": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD",
+        "img": {
+            "img1": "images/appleMacbookAir15inchM2(MQKX3)Gray.png",
+            "img2": "images/appleMacbookAir15inchM2(MQKX3)Gray2.png"
+        },
+        "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
+        "price": 767900,
+        "screenResolution": "2880 × 1864",
+        "screenSize": "15 inch (38,1 cm)",
+        "HardDriveCapacity": "512GB",
+        "RAM": "8GB",
+        "OSVersion": "macOS",
+        "type": "Notebook",
+        "CPU": "8-core CPU and 10-core GPU",
+        "HardDriveType": "SSD",
+        "Bluetooth": "Yes",
+        "WiFiNetwork": "Yes",
+        "BatteryType": "35W MagSafe; 70W USB-C",
+        "size": "13.40 x 9.53 x 0.45 inches",
+        "color": "Gray"
+    },
+    {
+        "id": 220,
+        "phoneName": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 256GB",
+        "model": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 256GB SSD",
+        "img": {
+            "img1": "images/appleMacbookAir15inchM2-256GB(MQKP3)Silver.png",
+            "img2": "images/appleMacbookAir15inchM2-256GB(MQKP3)Silver2.png"
+        },
+        "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
+        "price": 666900,
+        "screenResolution": "2880 × 1864",
+        "screenSize": "15 inch (38,1 cm)",
+        "HardDriveCapacity": "256GB",
+        "RAM": "8GB",
+        "OSVersion": "macOS",
+        "type": "Notebook",
+        "CPU": "8-core CPU and 10-core GPU",
+        "HardDriveType": "SSD",
+        "Bluetooth": "Yes",
+        "WiFiNetwork": "Yes",
+        "BatteryType": "35W MagSafe; 70W USB-C",
+        "size": "13.40 x 9.53 x 0.45 inches",
+        "color": "Silver"
+    },
+    {
+        "id": 221,
+        "phoneName": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 256GB",
+        "model": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 256GB SSD",
+        "img": {
+            "img1": "images/appleMacbookAir15inchM2-256GB(MQKP3)Midnightblue.png",
+            "img2": "images/appleMacbookAir15inchM2-256GB(MQKP3)Midnightblue2.png"
+        },
+        "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
+        "price": 666900,
+        "screenResolution": "2880 × 1864",
+        "screenSize": "15 inch (38,1 cm)",
+        "HardDriveCapacity": "256GB",
+        "RAM": "8GB",
+        "OSVersion": "macOS",
+        "type": "Notebook",
+        "CPU": "8-core CPU and 10-core GPU",
+        "HardDriveType": "SSD",
+        "Bluetooth": "Yes",
+        "WiFiNetwork": "Yes",
+        "BatteryType": "35W MagSafe; 70W USB-C",
+        "size": "13.40 x 9.53 x 0.45 inches",
+        "color": "Midnightblue"
+    },
+    {
+        "id": 222,
+        "phoneName": "PC Notebook Acer Aspire 3 A315-59G-77YF 512GB",
+        "model": "PC Notebook Acer Aspire 3 A315-59G-77YF 512GB",
+        "img": {
+            "img1": "images/acerAspire3A315-59G-77YF512GB(Green).png"
+        },
+        "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
+        "price": 449900,
+        "screenResolution": "1920 x 1080",
+        "screenSize": "15.6 inch (39.6 cm)",
+        "HardDriveCapacity": "512GB",
+        "OSVersion": "None",
+        "RAM": "8GB",
+        "type": "Notebook",
+        "CPU": "Intel Core i7-1255U",
+        "HardDriveType": "SSD",
+        "Bluetooth": "Yes",
+        "WiFiNetwork": "Yes",
+        "color": "Green"
+    },
+    {
+        "id": 223,
+        "phoneName": "PC Notebook Acer Aspire 3 A315-59G-77YF 512GB",
+        "model": "PC Notebook Acer Aspire 3 A315-59G-77YF 512GB",
+        "img": {
+            "img1": "images/acerAspire3A315-59G-77YF512GB(Silver).png"
+        },
+        "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
+        "price": 449900,
+        "screenResolution": "1920 x 1080",
+        "screenSize": "15.6 inch (39.6 cm)",
+        "HardDriveCapacity": "512GB",
+        "OSVersion": "None",
+        "RAM": "8GB",
+        "type": "Notebook",
+        "CPU": "Intel Core i7-1255U",
+        "HardDriveType": "SSD",
+        "Bluetooth": "Yes",
+        "WiFiNetwork": "Yes",
+        "color": "Silver"
+    },
+    {
+        "id": 224,
+        "phoneName": "PC Notebook Acer Aspire 3 A315-534T 512GB",
+        "model": "PC Notebook Acer Aspire 3 A315-534T 512GB",
+        "img": {
+            "img1": "images/acerAspire3A315-534T512GB(Green).png"
+        },
+        "name": "Apple Macbook Air 15 inch M2 chip with 8-core CPU and 10-core GPU 512GB SSD (MQKX3) Midnight",
+        "price": 339900,
+        "screenResolution": "1920 x 1080",
+        "screenSize": "15.6 inch (39.6 cm)",
+        "HardDriveCapacity": "512GB",
+        "OSVersion": "None",
+        "RAM": "8GB",
+        "type": "Notebook",
+        "CPU": "Intel Core i5-1235U",
+        "HardDriveType": "SSD",
+        "Bluetooth": "Yes",
+        "WiFiNetwork": "Yes",
+        "color": "Green"
     }
 ]

@@ -1,0 +1,106 @@
+.basketCard {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0;
+  border-bottom: 1px solid gray;
+}
+.basketCard .basketPic {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+.basketCard .basketName {
+  width: 20%;
+}
+.basketCard .basketName a {
+  text-decoration: none;
+}
+.basketCard .basketName a h4 {
+  color: rgb(50, 50, 227);
+}
+.basketCard .basketName a h4:hover {
+  color: rgb(85, 85, 211);
+}
+.basketCard .basketCountCard {
+  width: 20%;
+}
+.basketCard .basketCountCard .decrement:hover, .basketCard .basketCountCard .increment:hover {
+  background-color: rgb(50, 50, 227);
+  color: white;
+}
+.basketCard .totalPrice {
+  width: 20%;
+  text-align: center;
+}
+.basketCard .Remove {
+  width: 20%;
+  text-align: center;
+}
+.basketCard .Remove button {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(50, 50, 227);
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+.basketCard .Remove button:hover {
+  background-color: rgb(29, 29, 220);
+}
+.basketCard img {
+  width: 70px;
+}
+.basketCard h4 {
+  color: black;
+  text-align: left;
+}
+.basketCard span {
+  color: black;
+}
+.basketCard .basketCountCard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.basketCard .basketCountCard button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 30px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 400px) {
+  .basketCard {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .basketCard .basketPic {
+    width: 80%;
+  }
+  .basketCard .basketPic img {
+    width: 100%;
+  }
+  .basketCard .basketName {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .basketCard .basketCountCard, .basketCard .totalPrice, .basketCard .Remove {
+    width: 50%;
+  }
+}/*# sourceMappingURL=basket.css.map */

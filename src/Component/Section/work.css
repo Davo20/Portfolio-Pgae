@@ -7,7 +7,7 @@
 .section3 {
   width: 100%;
   height: auto;
-  background-color: #FFFEF2;
+  background-color: #e6e5de;
   padding-bottom: 30px;
 }
 .section3 h3 {
@@ -16,18 +16,53 @@
   text-align: center;
   padding-top: 30px;
 }
-.section3 .work {
+.section3 .sliderCont {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section3 .sliderCont .left, .section3 .sliderCont .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section3 .sliderCont .left {
+  height: 100px;
+  background-color: #1e1e2a;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  opacity: 0.5;
+}
+.section3 .sliderCont .left svg {
+  color: #e6e5de;
+  font-size: 60px;
+}
+.section3 .sliderCont .right {
+  height: 100px;
+  background-color: #1e1e2a;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  opacity: 0.5;
+}
+.section3 .sliderCont .right svg {
+  color: #e6e5de;
+}
+.section3 .sliderCont .work {
   width: 100%;
   display: flex;
   padding-top: 20px;
+  justify-content: space-between;
   margin: 0 auto;
   text-align: center;
 }
-.section3 .work svg {
-  color: black;
-}
-.section3 .work .slider {
-  min-width: 700px;
+.section3 .sliderCont .work .slider, .section3 .sliderCont .work .sliderTwo, .section3 .sliderCont .work .sliderThree, .section3 .sliderCont .work .sliderFour {
+  min-width: 100%;
+  transition: 0.5s ease-in;
 }
 .section3.active {
   background-color: rgb(14, 0, 20);
@@ -47,7 +82,6 @@
   main {
     width: 100%;
   }
-
   section {
     width: 100%;
   }
@@ -61,21 +95,19 @@
     margin: 15px auto;
   }
 }
-@media only screen and (max-width: 430px) {
-  main {
-    width: 100%;
+@media only screen and (min-width: 630px) {
+  .left, .right {
+    width: 50px;
   }
-
-  section {
-    width: 100%;
+  .left svg, .right svg {
+    font-size: 60px;
   }
-  section .work {
-    display: block;
-    width: 100%;
+}
+@media only screen and (max-width: 630px) {
+  .left, .right {
+    width: 30px;
   }
-  section .work a {
-    display: block;
-    width: 80%;
-    margin: 15px auto;
+  .left svg, .right svg {
+    font-size: 30px;
   }
 }/*# sourceMappingURL=work.css.map */

@@ -1,138 +1,447 @@
-nav{
+.nav {
+    max-width: 1600px;
     width: 100%;
     height: 60px;
     position: fixed;
-    z-index: 6;
-    div{
-        width: 100%;
+    z-index: 3334;
+    background-color: rgba(16, 72, 144, 1);
+
+
+    .navBar {
+        width: 95%;
         height: 100%;
+        margin: 0 auto;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        background-color: #4497e3;
-        background-color: #3d73dd;
-        background-color: rgba(16,72,144,1);
-        h2{
-            a{
-                color: white;
-                text-decoration: none;
-            }
-        }
-        input{
-            width: 100%;
-            height: 35px;
-            outline: none;
-            border: none;
-            padding-left: 10px;
-        }
-        .basket{
-            a{
-                color: white;
-                text-decoration: none;
-                position: relative;
-            }
-            svg{
-                color: white;
-                font-size: 25px;
-            }
-            span{
-                position: absolute;
-                width: 15px;
-                height: 15px;
-                background-color: red;
-                border-radius: 10px;
-                text-align: center;
-                right: -5px;
-                line-height: 15px;
-                font-size: 10px;
-            }
-        }
-        .searchIcon{
-            display: none;
-            color: white;
-        }
-        .burgerShop{
-            svg{
-                color: white;
-                cursor: pointer;
-            }
-            .shopBurgerMenu{
-                // width: 25%;
-                height: calc(100vh - 60px);
-                background-color: rgb(50, 50, 227);
-                position: absolute;
-                top: 60px;
-                right: -100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transition:  1s;
-                svg{
-                    position: absolute;
-                    right: 10px;
-                    top: 10px;
-                    font-size: 20px;
-                    cursor: pointer;
+
+        .logo {
+            h2 {
+                a {
+                    color: white;
+                    text-decoration: none;
                 }
-                ul{
+            }
+        }
+
+        .iconContt {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 30px;
+            width: 50%;
+
+            .search {
+                width: 60%;
+                position: relative;
+                .searchOption{
+                    position: absolute;
                     width: 100%;
-                    height: 80%;
-                    list-style-type: none;
-                    text-align: left;
-                    a{
-                        text-decoration: none;
-                        div{
-                            width: 100%;
-                            height: 50px;
-                            border-bottom: 1px solid rgb(222, 218, 218);
-                            background-color: rgb(50, 50, 227);
-                            display: flex;
-                            justify-content: flex-start;
-                            align-items: center;
-                            &:hover{
-                                background-color:rgb(29, 29, 220);
-                                background-color: rgb(222, 218, 218);
-                                background-color: white;
-                                li{
-                                    color: black;
+                    // height: 300px;
+                    height: auto;
+                    max-height: 300px;
+                    background-color: white;
+                    overflow-y: scroll;
+                    box-shadow: 0px 5px 10px 2px rgba(22, 29, 34, 0.2);
+                    ul{
+                        width: 100%;
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            li{
+                                width: 100%;
+                                height: auto;
+                                padding: 10px 0;
+                                cursor: pointer;
+                                border-bottom: 1px solid rgb(222, 221, 221);
+                                &:hover{
+                                    background-color: rgb(222, 218, 218);
                                 }
                             }
-                            li{
-                                text-align: left;
-                                width: 90%;
-                                // height: 100%;
-                                color: white;
-                                margin: 0 auto;
+                        }
+                    }
+                }
+
+                input {
+                    width: 100%;
+                    height: 35px;
+                    outline: none;
+                    border: none;
+                    padding-left: 10px;
+                }
+            }
+
+            .searchIcon {
+                color: white;
+                svg{
+                    font-size: 20px;
+                }
+            }
+
+            .basket {
+                display: flex;
+                align-items: center;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    position: relative;
+                }
+
+                svg {
+                    color: white;
+                    font-size: 25px;
+                    cursor: pointer;
+                }
+
+                span {
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    background-color: red;
+                    border-radius: 10px;
+                    text-align: center;
+                    right: -5px;
+                    line-height: 15px;
+                    font-size: 10px;
+                }
+            }
+            .selectLanguage{
+                select{
+                    border: none;
+                    outline: none;
+                }
+            }
+            .burgerShop {
+                display: flex;
+                align-items: center;
+                svg {
+                    color: white;
+                    font-size: 25px;
+                    cursor: pointer;
+                }
+                .shopBurgerMenu {
+                    // width: 25%;
+                    height: calc(100vh - 60px);
+                    background-color: rgb(50, 50, 227);
+                    position: absolute;
+                    top: 60px;
+                    right: -100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 1s;
+
+                    svg {
+                        position: absolute;
+                        right: 10px;
+                        top: 10px;
+                        font-size: 20px;
+                        cursor: pointer;
+                    }
+
+                    ul {
+                        width: 100%;
+                        height: 80%;
+                        list-style-type: none;
+                        text-align: left;
+
+                        a {
+                            text-decoration: none;
+
+                            div {
+                                width: 100%;
+                                height: 50px;
+                                border-bottom: 1px solid rgb(222, 218, 218);
+                                background-color: rgb(50, 50, 227);
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+
+                                &:hover {
+                                    background-color: rgb(29, 29, 220);
+                                    background-color: rgb(222, 218, 218);
+                                    background-color: white;
+
+                                    li {
+                                        color: black;
+                                    }
+                                }
+
+                                li {
+                                    text-align: left;
+                                    width: 90%;
+                                    // height: 100%;
+                                    color: white;
+                                    margin: 0 auto;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .burgerMenuOPen {
+                    right: 0;
+                    transition: 0.5s;
+
+                }
+            }
+        }
+    }
+
+    // div {
+    //     width: 100%;
+    //     height: 100%;
+    //     // margin: 0 auto;
+    //     display: flex;
+    //     justify-content: space-around;
+    //     align-items: center;
+
+    //     // background-color: #4497e3;
+    //     // background-color: #3d73dd;
+    //     // background-color: rgba(16,72,144,1);
+    //     .logo {
+    //         width: 20%;
+
+    //         h2 {
+    //             a {
+    //                 color: white;
+    //                 text-decoration: none;
+    //             }
+    //         }
+    //     }
+
+    //     .iconContt {
+    //         width: 40%;
+    //         display: flex;
+    //         justify-content: flex-end;
+
+    //         .search {
+    //             width: 60%;
+
+    //             input {
+    //                 width: 100%;
+    //                 height: 35px;
+    //                 outline: none;
+    //                 border: none;
+    //                 padding-left: 10px;
+    //             }
+    //         }
+    //     }
+
+    //     // .basket{
+    //     //     display: flex;
+    //     //     justify-content: center;
+    //     // }
+    //     a {
+    //         color: white;
+    //         text-decoration: none;
+    //         position: relative;
+    //     }
+
+    //     svg {
+    //         color: white;
+    //         font-size: 25px;
+    //     }
+
+    //     span {
+    //         position: absolute;
+    //         width: 15px;
+    //         height: 15px;
+    //         background-color: red;
+    //         border-radius: 10px;
+    //         text-align: center;
+    //         right: -5px;
+    //         line-height: 15px;
+    //         font-size: 10px;
+    //     }
+
+    //     .searchIcon {
+    //         display: none;
+    //         color: white;
+    //     }
+
+    //     // .selectLanguage{
+    //     //     display: flex;
+    //     //     justify-content: flex-end;
+
+    //     // }
+    //     .iconContt {
+    //         display: flex;
+    //         justify-content: flex-end;
+
+    //         svg {
+    //             color: white;
+    //             cursor: pointer;
+    //             font-size: 25px;
+    //         }
+
+    //         .shopBurgerMenu {
+    //             // width: 25%;
+    //             height: calc(100vh - 60px);
+    //             background-color: rgb(50, 50, 227);
+    //             position: absolute;
+    //             top: 60px;
+    //             right: -100%;
+    //             display: flex;
+    //             justify-content: center;
+    //             align-items: center;
+    //             transition: 1s;
+
+    //             svg {
+    //                 position: absolute;
+    //                 right: 10px;
+    //                 top: 10px;
+    //                 font-size: 20px;
+    //                 cursor: pointer;
+    //             }
+
+    //             ul {
+    //                 width: 100%;
+    //                 height: 80%;
+    //                 list-style-type: none;
+    //                 text-align: left;
+
+    //                 a {
+    //                     text-decoration: none;
+
+    //                     div {
+    //                         width: 100%;
+    //                         height: 50px;
+    //                         border-bottom: 1px solid rgb(222, 218, 218);
+    //                         background-color: rgb(50, 50, 227);
+    //                         display: flex;
+    //                         justify-content: flex-start;
+    //                         align-items: center;
+
+    //                         &:hover {
+    //                             background-color: rgb(29, 29, 220);
+    //                             background-color: rgb(222, 218, 218);
+    //                             background-color: white;
+
+    //                             li {
+    //                                 color: black;
+    //                             }
+    //                         }
+
+    //                         li {
+    //                             text-align: left;
+    //                             width: 90%;
+    //                             // height: 100%;
+    //                             color: white;
+    //                             margin: 0 auto;
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
+
+    //         .burgerMenuOPen {
+    //             right: 0;
+    //             transition: 0.5s;
+
+    //         }
+    //     }
+
+}
+@media only screen and (min-width: 1024px) {
+    nav {
+        // max-width: 400px;
+        width: 100%;
+        div {
+            .searchIcon {
+                display: none;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    nav {
+        // max-width: 400px;
+        width: 100%;
+        div {
+            input {
+                display: none;
+            }
+            
+            .searchIcon {
+                display: block;
+            }
+        }
+        .searchInputActive{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: gray;
+            opacity: 0.9;
+            top: 60px;
+            left: 0;
+            .searchOption{
+                position: absolute;
+                left: 5%;
+                right: 5%;
+                height: auto;
+                max-height: 300px;
+                background-color: white;
+                overflow-y: scroll;
+                box-shadow: 0px 5px 10px 2px rgba(22, 29, 34, 0.2);
+                ul{
+                    width: 100%;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        li{
+                            width: 100%;
+                            height: auto;
+                            padding: 10px 0;
+                            cursor: pointer;
+                            border-bottom: 1px solid rgb(222, 221, 221);
+                            &:hover{
+                                background-color: rgb(222, 218, 218);
                             }
                         }
                     }
                 }
             }
-            .burgerMenuOPen{
-                right: 0;
-                transition: 0.5s;
-                
+            input{
+                width: 90%;
+                display: block;
+                height: 35px;
+                outline: none;
+                border: none;
+                padding-left: 10px;
+                margin: 20px auto;
+                opacity: 1;
             }
         }
     }
-}
-@media only screen and (min-width: 400px){
-    .shopBurgerMenu{
+    .shopBurgerMenu {
         width: 26%;
     }
 }
-@media only screen and (max-width: 400px){
-    nav{
-        div{
-            input{
-                display: none;
-            }
-            .searchIcon{
-                display: block;
-            }
-        }
+
+@media only screen and (min-width: 400px) {
+    
+    .shopBurgerMenu {
+        width: 26%;
     }
-    .shopBurgerMenu{
+}
+
+@media only screen and (max-width: 400px) {
+    // nav {
+    //     max-width: 400px;
+    //     width: 100%;
+    //     div {
+    //         input {
+    //             display: none;
+    //         }
+
+    //         .searchIcon {
+    //             display: block;
+    //         }
+    //     }
+    // }
+
+    .shopBurgerMenu {
         width: 80%;
     }
 }

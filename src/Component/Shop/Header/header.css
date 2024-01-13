@@ -1,0 +1,75 @@
+.productHeader {
+  width: 100%;
+  padding-top: 60px;
+}
+.productHeader div {
+  height: 100%;
+}
+.productHeader .react-multi-carousel-track {
+  height: 100%;
+}
+.productHeader .react-multi-carousel-dot-list {
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.productHeader .react-multi-carousel-dot-list .react-multi-carousel-dot button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(155, 153, 153);
+  border: none;
+}
+.productHeader .react-multi-carousel-dot-list .react-multi-carousel-dot--active button {
+  background-color: rgb(41, 41, 176);
+  background-color: rgb(50, 50, 227);
+  width: 13px;
+  height: 13px;
+  padding: 1px 0;
+  border: none;
+}
+.productHeader .sliderShopProductCont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.productHeader .sliderShopProductCont svg {
+  position: absolute;
+  font-size: 50px;
+  z-index: 1;
+  color: black;
+}
+.productHeader .sliderShopProductCont .leftProduct {
+  left: 0;
+}
+.productHeader .sliderShopProductCont .rightProduct {
+  right: 0;
+}
+.productHeader .sliderShopProductCont .imageSliderShopProduct {
+  min-width: 100%;
+  height: 100%;
+  transition: 0.5s ease-in;
+}
+.productHeader .sliderShopProductCont .imageSliderShopProduct img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 400px) {
+  .productHeader {
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .productHeader {
+    height: 100vh;
+  }
+  .productHeader .react-multi-carousel-dot-list {
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}/*# sourceMappingURL=header.css.map */

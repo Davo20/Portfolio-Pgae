@@ -11,12 +11,13 @@ export default function Filter({setFilter, setff, setTabletFilter, selectLanguag
     const [allProduct, setAllProduct] = useState([])
     // const [filterr, setFilter] = useState([])
     // const [ff, setff] = useState(false)
-    useEffect(()=>{
-        setAllProduct([...JSON.parse(localStorage.getItem("allProduct"))])
-    }, [allProduct])
+    // useEffect(()=>{
+    //     setAllProduct([...JSON.parse(localStorage.getItem("allProduct"))])
+    // }, [allProduct])
 
     const filterProduct = (filter)=>{
         const hhhh =  phoneCategory.filter((elem)=>filter === elem.RAM || filter === elem.brand || filter === elem.operationSystem || filter === elem.memory)
+
                  setFilter(hhhh)
                  setff(true)
                 //  setFilter(hhhh)

@@ -1,47 +1,89 @@
-.productHeader{
+.productHeader {
     width: 100%;
-    height: 80vh;
     padding-top: 60px;
-    // overflow: hidden;
-    .sliderShopProductCont{
+    div{
+        height: 100%;
+    }
+    .react-multi-carousel-track {
+        height: 100%;
+    }
+    .react-multi-carousel-dot-list {
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        .react-multi-carousel-dot {
+            button {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: rgb(155, 153, 153);
+                border: none;
+                
+            }
+        }
+
+        .react-multi-carousel-dot--active {
+
+            button {
+                background-color: rgb(41, 41, 176);
+                background-color: rgb(50, 50, 227);
+                width: 13px;
+                height: 13px;
+                padding: 1px 0;
+                border: none;
+                // padding: 5px;
+                // padding: 3px;
+            }
+        }
+    }
+    .sliderShopProductCont {
         width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
-        position: relative;
-        svg{
+
+        svg {
             position: absolute;
             font-size: 50px;
             z-index: 1;
             color: black;
         }
-        .leftProduct{
+
+        .leftProduct {
             left: 0
         }
-        .rightProduct{
+
+        .rightProduct {
             right: 0;
         }
-        .imageProductContainerShop{
-            width: 100%;
+
+        .imageSliderShopProduct {
+            min-width: 100%;
             height: 100%;
-            display: flex;
-            justify-content: space-between;
-            // overflow: hidden;
-            .imageSliderShopProduct{
-                min-width: 100%;
+            transition: 0.5s ease-in;
+
+            img {
+                width: 100%;
                 height: 100%;
-                overflow: hidden;
-                transition: 0.5s ease-in;
-                img{
-                    width: 100%;
-                    height: 100%;
-            }
             }
         }
     }
 }
-@media only screen and (max-width: 400px){
-    .productHeader{
-        height: 70vh;
+@media only screen and (min-width: 400px) {
+    .productHeader {
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .productHeader {
+        height: 100vh;
+        .react-multi-carousel-dot-list {
+            bottom: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
     }
 }

@@ -1,10 +1,14 @@
 import React, {useEffect, useRef} from "react";
-import { BrowserRouter as Link } from "react-router-dom";
+// import { BrowserRouter as Link } from "react-router-dom";
 import Calculate from "../Calculate/Calculate";
 import Task from "../Task/Task";
 import  Game from "../Game/Game";
+import Shop from "../Shop/Shop"
+import HeaderMain from "../Shop/HeaderMain";
 import  GameTwo from "../GameTwo/GameTwo"
 import {IoIosArrowBack, IoIosArrowForward} from "react-icons/io"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import "./work.scss";
 
 export default function Work({lang, fon, dark}){
@@ -52,8 +56,20 @@ export default function Work({lang, fon, dark}){
                     <Game fon={fon}/>
                 </div>
                 <div className="sliderFour">
-                    <GameTwo/>
+                    {/* <GameTwo/> */}
+                    {/* <Shop></Shop> */}
+                    {/* <BrowserRouter>
+                       <Routes>
+                        <Route path ="/" element={<Shop></Shop>}>
+                            <Route path="header" element={<HeaderMain></HeaderMain>}></Route>
+                        </Route>
+                       </Routes> 
+                    </BrowserRouter> */}
+                    <Link to="/">Site</Link>
+                    {/* <Link to="/">ShopSita</Link> */}
+                    {/* <a href="/">ShopSita</a> */}
                 </div>
+
             </div>
             <div className="right" onClick={right}> <IoIosArrowForward /></div>
             </div>

@@ -5,11 +5,52 @@
 }
 
 .square {
-  width: 300px;
-  height: 300px;
-  border: 1px solid black;
+  width: 330px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #010101;
+}
+.square.active {
+  border: 1px solid white;
 }
 .square .boxOne, .square .boxTwo, .square .boxThree {
   width: 100%;
   height: 100px;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+.square .boxOne .gameSq, .square .boxTwo .gameSq, .square .boxThree .gameSq {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #89ceed;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: #151c1f;
+}
+.square .boxOne .gameSq.active, .square .boxTwo .gameSq.active, .square .boxThree .gameSq.active {
+  border: 1px solid white;
+}
+
+.reset {
+  background-color: #295ea0;
+  border: none;
+  outline: none;
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;
+  color: #fafafa;
+  cursor: pointer;
+}
+.reset:hover {
+  background-color: #194880;
+}
+
+@media only screen and (max-width: 430px) {
+  .square {
+    width: calc(100% - 100px);
+  }
 }/*# sourceMappingURL=game.css.map */

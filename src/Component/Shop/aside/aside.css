@@ -1,0 +1,36 @@
+aside {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(222, 218, 218);
+}
+aside div {
+  width: 100%;
+  height: 100%;
+}
+aside div ul {
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  list-style-type: none;
+  margin: 0 auto;
+  padding-top: 2px;
+}
+aside div ul a {
+  text-decoration: none;
+  color: black;
+}
+aside div ul a li {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+aside div ul a li:hover {
+  background-color: rgb(50, 50, 227);
+}
+aside div ul a li:hover svg {
+  color: white;
+}/*# sourceMappingURL=aside.css.map */

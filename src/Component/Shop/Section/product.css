@@ -1,0 +1,171 @@
+.productPage {
+  background-color: #cdced1;
+  padding-top: 60px;
+}
+
+.productHead {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+.productHead .productPic {
+  height: 80%;
+  width: 50%;
+}
+.productHead .productPic .b {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.productHead .productPic .b div {
+  min-width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s ease-in;
+}
+.productHead .productPic .b div img {
+  width: 100%;
+  height: 100%;
+}
+.productHead .productPic .sliderPrev {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.productHead .productPic .sliderPrev .dotPic {
+  height: 100%;
+  cursor: pointer;
+}
+.productHead .productPic .sliderPrev .dotPic img {
+  height: 100%;
+}
+.productHead .productMem {
+  background-color: white;
+  width: 40%;
+  height: auto;
+}
+.productHead .productMem p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.productHead .productMem .productInfo {
+  width: 100%;
+  display: flex;
+  justify-content: s;
+  margin-top: 20px;
+  text-align: left;
+}
+.productHead .productMem .productInfo div {
+  width: 100%;
+}
+.productHead .productMem .productInfo div ul {
+  list-style-type: none;
+}
+.productHead .productMem .productInfo div ul li {
+  margin-top: 5px;
+}
+.productHead .productMem .productInfo div ul .color {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.productHead .productMem .productInfo div ul .color div {
+  width: 18px;
+  height: 18px;
+}
+.productHead .productMem .productInfo div ul .color .label {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+}
+.productHead .productMem .productInfo div ul .color .label input {
+  display: none;
+}
+.productHead .productMem button {
+  width: 25%;
+  height: 30px;
+  background-color: rgb(50, 50, 227);
+  outline: none;
+  border: none;
+  margin-top: 20px;
+  color: white;
+  cursor: pointer;
+}
+.productHead .productMem button:hover {
+  background-color: rgb(29, 29, 220);
+}
+
+table {
+  width: 100%;
+}
+table td {
+  border: 1px solid black;
+}
+
+.cardInfoCont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cardInfoCont .infoName > div,
+.cardInfoCont .infoValues > div {
+  margin: 10px 2px;
+  height: 50px;
+  background-color: #E6E5DE;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.cardInfoCont .infoName {
+  width: 30%;
+  color: #3D424A;
+}
+.cardInfoCont .infoValues {
+  width: 65%;
+}
+
+@media only screen and (max-width: 400px) {
+  .productPage {
+    padding-top: 60px;
+  }
+  .productPage .productHead {
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  .productPage .productHead .productPic {
+    width: 70%;
+  }
+  .productPage .productHead .productPic img {
+    width: 100%;
+  }
+  .productPage .productHead .productMem {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .productPage .productHead .productMem .productInfo div:nth-child(2) {
+    text-align: right;
+  }
+  .productPage .cardInfoCont .infoName > div,
+  .productPage .cardInfoCont .infoValues > div {
+    margin: 2px 1px;
+    height: 80px;
+    padding: 0 10px;
+  }
+}/*# sourceMappingURL=product.css.map */

@@ -5,14 +5,14 @@ import HomeSection from "./HomeSection";
 import Footer from "./Footer";
 import NavBar from "./Nav/NavBar";
 
-export default function HeaderMain ({productName, cardClick, selectLanguage, languageBurger}){
+export default function HeaderMain ({productName, cardClick, languageBurger, language, languageKey}){
     return(
         <div>
             {/* <NavBar></NavBar> */}
             <HeaderSlider></HeaderSlider>
             <Aside></Aside>
-            <HomeSection selectLanguage={selectLanguage} productName={productName} cardClick={cardClick}></HomeSection>
-            <Footer languageBurger={languageBurger} selectLanguage={selectLanguage}></Footer>
+            <HomeSection productName={productName} cardClick={cardClick} language={language} languageKey={languageKey}></HomeSection>
+            <Footer languageBurger={languageBurger} language={language} languageKey={languageKey}></Footer>
         </div>
     )
 }

@@ -4,8 +4,8 @@ import { FaFacebook, FaInstagram, FaWhatsapp, FaTelegram } from "react-icons/fa"
 
 import { Outlet, Link } from "react-router-dom";
 
-export default function Footer(){
-    return(
+export default function Footer({ languageKey, language }) {
+    return (
         <footer className="footerShop">
             <div className="footerContainer">
                 <div className="contact">
@@ -18,23 +18,25 @@ export default function Footer(){
                     </div>
                 </div>
                 <div className="footerSections">
-                    <ul>
-                        <Link to="/phones">
-                            <li>Phones</li>
-                        </Link>
-                        <Link to="/tablets">
-                            <li>Tablets</li>
-                        </Link>
-                        <Link to="/watches">
-                            <li>Watches</li>
-                        </Link>
-                        <Link to="/computers">
-                            <li>Computers</li>
-                        </Link>
-                        <Link to="/">
-                            <li>TV</li>
-                        </Link>
-                    </ul>
+                    {/* {languageKey[language].map((elem) => {
+                        return <ul>
+                            <Link to="/phones">
+                                <li>{elem.phones}</li>
+                            </Link>
+                            <Link to="/tablets">
+                                <li>{elem.tablets}</li>
+                            </Link>
+                            <Link to="/watches">
+                                <li>{elem.watches}</li>
+                            </Link>
+                            <Link to="/computers">
+                                <li>{elem.computers}</li>
+                            </Link>
+                            <Link to="/">
+                                <li>{elem.tv}</li>
+                            </Link>
+                        </ul>
+                    })} */}
                 </div>
                 <div className="contactOnline">
                     <FaFacebook></FaFacebook>

@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section2 {
+  width: 100%;
+  height: auto;
+  background-color: #e6e5de;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.section2 h3 {
+  font-size: 55px;
+  font-weight: 600;
+  text-align: center;
+  display: block;
+}
+.section2 .skill {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.section2 .skill .front {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #FFFEF2;
+  border-radius: 5px;
+}
+.section2 .skill .frontSkill {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.section2 .skill .frontSkill .html, .section2 .skill .frontSkill .css, .section2 .skill .frontSkill .sass, .section2 .skill .frontSkill .js, .section2 .skill .frontSkill .react {
+  margin: 10px 0;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #696969;
+}
+.section2 .skill .frontSkill .html div, .section2 .skill .frontSkill .css div, .section2 .skill .frontSkill .sass div, .section2 .skill .frontSkill .js div, .section2 .skill .frontSkill .react div {
+  display: flex;
+  justify-content: center;
+}
+.section2 .skill .frontSkill .html div svg, .section2 .skill .frontSkill .css div svg, .section2 .skill .frontSkill .sass div svg, .section2 .skill .frontSkill .js div svg, .section2 .skill .frontSkill .react div svg {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 30px;
+  background-color: #2b2b2a;
+}
+.section2 .skill .frontSkill .html .skillIcon, .section2 .skill .frontSkill .css .skillIcon, .section2 .skill .frontSkill .sass .skillIcon, .section2 .skill .frontSkill .js .skillIcon, .section2 .skill .frontSkill .react .skillIcon {
+  width: 150px;
+  border-right: 1px solid black;
+}
+.section2 .skill .frontSkill .html .skillName, .section2 .skill .frontSkill .css .skillName, .section2 .skill .frontSkill .sass .skillName, .section2 .skill .frontSkill .js .skillName, .section2 .skill .frontSkill .react .skillName {
+  width: 100px;
+}
+.section2 .skill .frontSkill .html svg {
+  color: chocolate;
+}
+.section2 .skill .frontSkill .css svg {
+  color: blue;
+}
+.section2 .skill .frontSkill .sass svg {
+  color: violet;
+}
+.section2 .skill .frontSkill .js svg {
+  color: #a8a805;
+}
+.section2 .skill .frontSkill .react svg {
+  color: rgb(71, 144, 240);
+}
+.section2.active {
+  background-color: rgb(14, 0, 20);
+}
+.section2.active h3 {
+  color: #FFFEF2;
+}
+
+@keyframes left {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@media only screen and (max-width: 430px) {
+  .skill .frontSkill .html, .skill .frontSkill .css, .skill .frontSkill .sass, .skill .frontSkill .js, .skill .frontSkill .react {
+    width: calc(100% - 30px);
+  }
+}/*# sourceMappingURL=skill.css.map */

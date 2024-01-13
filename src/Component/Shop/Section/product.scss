@@ -1,57 +1,112 @@
-.productPage{
+.productPage {
     background-color: #cdced1;
     padding-top: 60px;
 }
-.productHead{
+
+.productHead {
     width: 95%;
     margin: 0 auto;
-    height: 400px;
+    // height: 400px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    .productPic{
+
+    .productPic {
         height: 80%;
-        // width: 100%;
-        display: flex;
-        justify-content: center;
-        img{
-            width: 100%;
+        width: 50%;
+
+        .b {
+            width: 60%;
+            height: 60%;
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            margin: 0 auto;
+
+            div {
+                min-width: 100%;
+                height: 100%;
+                overflow: hidden;
+                transition: 0.5s ease-in;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .sliderPrev {
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            .dotPic {
+                height: 100%;
+                cursor: pointer;
+
+                img {
+                    height: 100%;
+                }
+            }
         }
     }
-    .productMem{
+
+    .productMem {
         background-color: white;
         width: 40%;
         height: auto;
-        p{
+
+        p {
             margin-top: 20px;
             font-size: 20px;
             font-weight: 600;
         }
-        .productInfo{
+
+        .productInfo {
             width: 100%;
             display: flex;
             justify-content: s;
             margin-top: 20px;
             text-align: left;
-            div{
+
+            div {
                 width: 100%;
-                ul{
+
+                ul {
                     list-style-type: none;
-                    li{
+
+                    li {
                         margin-top: 5px;
                     }
-                    .color{
-                        button{
-                            width: 20px;
-                            height: 20px;
-                            margin: 2px;
+
+                    .color {
+                        // width: 40%;
+                        display: flex;
+                        justify-content: flex-start;
+                        gap: 10px;
+                        div{
+                            width: 18px;
+                            height: 18px;
                         }
+                        .label{
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            cursor: pointer;
+                            
+                            input{
+                                    display: none;
+                                }
+                            }
                     }
                 }
             }
         }
-        button{
+
+        button {
             width: 25%;
             height: 30px;
             background-color: rgb(50, 50, 227);
@@ -60,23 +115,29 @@
             margin-top: 20px;
             color: white;
             cursor: pointer;
-            &:hover{
-                background-color:rgb(29, 29, 220);
+
+            &:hover {
+                background-color: rgb(29, 29, 220);
             }
         }
     }
 }
-table{
+
+table {
     width: 100%;
-    td{
+
+    td {
         border: 1px solid black;
     }
 }
-.cardInfoCont{
+
+.cardInfoCont {
     width: 100%;
     display: flex;
     justify-content: center;
-    .infoName>div, .infoValues>div{
+
+    .infoName>div,
+    .infoValues>div {
         margin: 10px 2px;
         height: 50px;
         background-color: #E6E5DE;
@@ -85,18 +146,22 @@ table{
         align-items: center;
         padding: 0 10px;
     }
-    .infoName{
+
+    .infoName {
         width: 30%;
         color: #3D424A
     }
-    .infoValues{
+
+    .infoValues {
         width: 65%;
     }
 }
-@media only screen and (max-width: 400px){
-    .productPage{
+
+@media only screen and (max-width: 400px) {
+    .productPage {
         padding-top: 60px;
-        .productHead{
+
+        .productHead {
             width: 95%;
             margin: 0 auto;
             height: auto;
@@ -105,26 +170,33 @@ table{
             justify-content: space-around;
             align-items: center;
             padding-bottom: 20px;
-            .productPic{
+
+            .productPic {
                 width: 70%;
-                img{
+
+                img {
                     width: 100%;
                 }
             }
-            .productMem{
+
+            .productMem {
                 width: 90%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                .productInfo{
-                    div:nth-child(2){
+
+                .productInfo {
+                    div:nth-child(2) {
                         text-align: right;
                     }
                 }
             }
         }
-        .cardInfoCont{
-            .infoName>div, .infoValues>div{
+
+        .cardInfoCont {
+
+            .infoName>div,
+            .infoValues>div {
                 margin: 2px 1px;
                 height: 80px;
                 padding: 0 10px;

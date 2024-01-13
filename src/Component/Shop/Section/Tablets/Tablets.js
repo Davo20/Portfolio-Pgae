@@ -1,61 +1,108 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import tabletsCategory from "./tabletsCategory.json";
 import Aside from "../../aside/Aside";
 import Filter from "../Filter/Filter";
+import Filte from "../Filter/Filte";
 import Footer from "../../Footer"
 import { Outlet, Link } from "react-router-dom";
+import { FaFilter } from "react-icons/fa";
 
-export default function Tablets ({cardClick, productName}){
-    const [basket, setBasket] = useState([])
+export default function Tablets({ cardClick, productName, languageKey, language }) {
     const [tabletFilter, setTabletFilter] = useState([])
-    const [ff, setff] = useState(false)
+    const [allProduct, setAllProduct] = useState([])
+    const maxPrice = [...tabletsCategory].sort((a, b) => {
+        return a.price - b.price
+    })
+    const minPrice = [...tabletsCategory].sort((a, b) => {
+        return b.price - a.price
+    })
+    const [minprice, setMinPrice] = useState(minPrice[minPrice.length - 1].price)
+    const [maxprice, setMaxPrice] = useState(maxPrice[maxPrice.length - 1].price)
+    const [value1, setValue1] = useState([minprice, maxprice])
+    const [filterOpen, setFilterOpen] = useState(false)
 
-    useEffect(()=>{
-        setBasket([...JSON.parse(localStorage.getItem("basket"))])
-    },[basket])
+    const change = (event, value, activeThumb) => {
+        const gap = 0
 
-    const addBasket = (e)=>{
-        tabletsCategory.map((elem, index)=>{
-            if(e.target.id == elem.id){
-                localStorage.setItem("basket", JSON.stringify([...basket, elem]))
-    
+        if (activeThumb === 0) {
+            setValue1([Math.min(value[0], value1[1] - gap), value1[1]]);
+        } else {
+            setValue1([value1[0], Math.max(value[1], value1[0] + gap)]);
+        }
+        let temp = tabletsCategory.filter((item) => item.price >= value[0] && item.price <= value[1]);
+        setTabletFilter([...temp])
+    }
+
+    const addBasket = (e) => {
+        tabletsCategory.map((elem, index) => {
+            if (e.target.id == elem.id) {
+                const basket = [
+                    {
+                        id: elem.id,
+                        img: elem.img.img1,
+                        price: elem.price,
+                        model: elem.model,
+                    }
+                ]
+                localStorage.setItem("basket", JSON.stringify([...JSON.parse(localStorage.getItem("basket")), ...basket]))
+
             }
         })
     }
-    return(
+
+    const filterProduct = (selectedCategory) => {
+        if (allProduct.includes(selectedCategory)) {
+            let filters = allProduct.filter((el) => el !== selectedCategory);
+            setAllProduct(filters);
+        } else {
+            setAllProduct([...allProduct, selectedCategory]);
+        }
+    };
+    useEffect(() => {
+        filterItems()
+    }, [allProduct])
+
+
+    const filterItems = () => {
+        if (allProduct.length > 0) {
+            let tempItems = allProduct.map((selectedCategory) => {
+                let temp = tabletsCategory.filter((item) => item.RAM === selectedCategory || item.brand === selectedCategory || item.operationSystem === selectedCategory || item.memory === selectedCategory || item.color === selectedCategory);
+                return temp;
+            });
+            setTabletFilter(tempItems.flat());
+        } else {
+            setTabletFilter([...tabletsCategory]);
+        }
+    };
+    return (
         <div className="categoryy">
             <Aside></Aside>
-        <section>
-            <div className="categoryPage">
-            <Filter setTabletFilter={setTabletFilter} setff={setff}></Filter>
-           {!ff ? <div className="Category">
-            {tabletsCategory.map((elem, index)=>{
-                return <div className="card" id={elem.id} key={index}>
-                    <Link to={`/product:${productName}`}><img src={elem.img} id={elem.id} onClick={cardClick}></img></Link>
-                    <div className="cardProductNameTablets">
-                        <h2>{`${elem.model} ${elem.memory}`}</h2>
+            <section>
+                <div className="titleProduct">
+                    {languageKey[language].map((item, index) => {
+                        return <h3 key={index}>{item.tablets}</h3>
+                    })}
+                    <FaFilter onClick={()=>setFilterOpen(true)}></FaFilter>
+                </div>
+                <div className="categoryPage">
+                    <Filte change={change} value1={value1} minprice={minprice} maxprice={maxprice} allProduct={allProduct} filterProduct={filterProduct} setTabletFilter={setTabletFilter} languageKey={languageKey} language={language} filterOpen={filterOpen}></Filte>
+                    <div className="Category">
+                        {tabletFilter.map((elem, index) => {
+                            return languageKey[language].map((item) => {
+                                return <div className="card" id={elem.id} key={index}>
+                                    <Link to={`/product:${productName}`}><img src={elem.img.img1} id={elem.id} onClick={cardClick}></img></Link>
+                                    <div className="cardProductNameTablets">
+                                        <h2>{`${elem.model} ${elem.memory}`}</h2>
+                                    </div>
+                                    <p>{`${elem.price.toLocaleString()}${item.price}`}</p>
+                                    <button onClick={addBasket} id={elem.id}>{item.buy}</button>
+                                </div>
+                            })
+                        })}
                     </div>
-                    <p>{`${elem.price.toLocaleString()}AMD`}</p>
-                    <button onClick={addBasket} id={elem.id}>Buy</button>
-                </div>               
-            })}
-           </div>:
-           <div className="Category">
-           {tabletFilter.map((elem, index)=>{
-               return <div className="card" id={elem.id} key={index}>
-                   <Link to={`/product:${productName}`}><img src={elem.img} id={elem.id} onClick={cardClick}></img></Link>
-                   <div className="cardProductNameTablets">
-                       <h2>{`${elem.model} ${elem.memory}`}</h2>
-                   </div>
-                   <p>{`${elem.price.toLocaleString()}AMD`}</p>
-                   <button onClick={addBasket} id={elem.id}>Buy</button>
-               </div>               
-           })}
-          </div>}
-       
-            </div>
-        </section>
-        <Footer></Footer>
+                </div>
+            </section>
+            <Footer></Footer>
         </div>
     )
 }

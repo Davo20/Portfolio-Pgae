@@ -1,0 +1,148 @@
+section {
+  padding-top: 60px;
+}
+
+.categoryy {
+  padding-top: 60px;
+}
+.categoryy aside {
+  width: 100%;
+  height: 60px;
+}
+
+.categoryPage {
+  width: 100%;
+  display: flex;
+}
+
+.filterBar {
+  width: 30%;
+  height: auto;
+}
+.filterBar .filterProduct {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid rgb(222, 218, 218);
+  padding: 10px;
+}
+.filterBar .filterProduct .progress {
+  height: 5px;
+  position: relative;
+  background-color: rgb(222, 217, 217);
+  border-radius: 5px;
+  margin: 0;
+}
+.filterBar .filterProduct .progress div {
+  position: absolute;
+  height: 5px;
+  border-radius: 5px;
+  right: 30%;
+  left: 30%;
+  background-color: #17a2b8;
+  margin: 0;
+}
+.filterBar .filterProduct .filterProductCont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+.filterBar .filterProduct .filterProductCont button {
+  height: 25px;
+  outline: none;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.filterBar .filterProduct .filterProductCont .active {
+  background-color: rgb(50, 50, 227);
+}
+.filterBar .filterProductColor {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid rgb(222, 218, 218);
+  padding: 10px;
+}
+.filterBar .filterProductColor div {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+}
+.filterBar .filterProductColor div button {
+  height: 25px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.filterBar .filterProductColor div .activeColor {
+  height: 25px;
+  padding: 5px;
+}
+
+.Category {
+  width: calc(100% - 50px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+}
+.Category a {
+  text-decoration: none;
+  color: black;
+}
+.Category .card {
+  border: 1px solid rgb(222, 218, 218);
+  text-align: center;
+  height: auto;
+  padding-bottom: 20px;
+}
+.Category .card:hover {
+  box-shadow: 0px 0px 12px 5px rgba(34, 60, 80, 0.2);
+}
+.Category .card .cardProductNamePhones,
+.Category .card .cardProductNameTablets {
+  width: 95%;
+  margin: 0 auto;
+  height: 40px;
+}
+.Category .card .cardProductNamePhones h2,
+.Category .card .cardProductNameTablets h2 {
+  font-size: 16px;
+}
+.Category .card .cardProductName,
+.Category .card .cardProductNameWatch {
+  width: 95%;
+  margin: 0 auto;
+  height: 70px;
+}
+.Category .card .cardProductName h2,
+.Category .card .cardProductNameWatch h2 {
+  font-size: 14px;
+}
+.Category .card p {
+  margin-top: 5px;
+}
+.Category .card img {
+  width: 60%;
+}
+.Category .card button {
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  background-color: rgb(50, 50, 227);
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.Category .card button:hover {
+  background-color: rgb(29, 29, 220);
+}
+
+@media only screen and (max-width: 400px) {
+  .filterBar {
+    display: none;
+  }
+  .Category {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}/*# sourceMappingURL=category.css.map */
