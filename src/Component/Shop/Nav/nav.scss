@@ -347,10 +347,20 @@
     nav {
         // max-width: 400px;
         width: 100%;
-        div {
-            .searchIcon {
-                display: none;
+        .shopBurgerMenu {
+            width: 26%;
+        }
+        .search {
+            display: block;
+            input{
+                display: block;
             }
+        }
+        .searchIcon {
+            display: none;
+        }
+        .searchInputActive{
+            display: none;
         }
     }
 }
@@ -358,7 +368,14 @@
     nav {
         // max-width: 400px;
         width: 100%;
-        div {
+        // .search{
+        //     display: none;
+        //     li{
+        //         display: none;
+        //     }
+        // }
+        .search {
+            display: none;
             input {
                 display: none;
             }
@@ -375,6 +392,7 @@
             opacity: 0.9;
             top: 60px;
             left: 0;
+            z-index: 22;
             .searchOption{
                 position: absolute;
                 left: 5%;
@@ -415,33 +433,14 @@
         }
     }
     .shopBurgerMenu {
-        width: 26%;
+        width: 50%;
     }
 }
 
-@media only screen and (min-width: 400px) {
-    
-    .shopBurgerMenu {
-        width: 26%;
-    }
-}
 
 @media only screen and (max-width: 400px) {
-    // nav {
-    //     max-width: 400px;
-    //     width: 100%;
-    //     div {
-    //         input {
-    //             display: none;
-    //         }
-
-    //         .searchIcon {
-    //             display: block;
-    //         }
-    //     }
-    // }
 
     .shopBurgerMenu {
-        width: 80%;
+        width: 100%;
     }
 }

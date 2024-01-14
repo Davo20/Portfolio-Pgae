@@ -17,6 +17,8 @@ export default function NavBar({ languageClick, language, languageKey, allProduc
     const [searchOptionOpen, setSearchOptionOpen] = useState(false)
     const navigate = useNavigate()
     const [searchInputOpen, setSearchInputOpen] = useState(false)
+    const g = useRef(null)
+    const input = useRef(null)
     // useEffect(()=>{
     //     setBaskett([...JSON.parse(localStorage.getItem("basket"))])
     //     let iconCount = null
@@ -53,10 +55,25 @@ export default function NavBar({ languageClick, language, languageKey, allProduc
             setSearchInputOpen(false)
         }
     }
-    window.onclick = function (event) {
-        setSearchOptionOpen(false)
-        // setSearchInputOpen(false)
-    }
+    // window.onclick = function (event) {
+    //     if(event.target !== g.current){
+
+    //         setSearchOptionOpen(false)
+    //     }
+    //     // setSearchInputOpen(false)
+    // }
+    useEffect(() => {
+        document.addEventListener("mousedown", handleOutsideClick);
+        return () => {
+          document.removeEventListener("mousedown", handleOutsideClick);
+        };
+      }, []);
+      const handleOutsideClick = (e) => {
+        if (!input.current.contains(e.target) && g.current && g.current.contains(e.target)) {
+            setSearchInputOpen(false);
+        }
+      };
+    console.log(g.current)
     return (
         <nav className="nav">
             <div className="navBar">
@@ -66,8 +83,8 @@ export default function NavBar({ languageClick, language, languageKey, allProduc
                     </h2>
                 </div>
                 <div className="iconContt">
-                    <div className={searchInputOpen ? "searchInputActive" : "search"}>
-                        <input type="search"
+                    <div ref={g} className={searchInputOpen ? "searchInputActive" : "search"}>
+                        <input ref={input} type="search"
                             name="search"
                             onChange={searchProduct}
                             onKeyUp={searchResultProduct}
@@ -85,6 +102,7 @@ export default function NavBar({ languageClick, language, languageKey, allProduc
                     </div>
                     <div className="searchIcon">
                         <BsSearch onClick={()=>setSearchInputOpen(true)}></BsSearch>
+                        
                     </div>
                     <div className="basket">
                         {baskett.length == 0 ? <BiShoppingBag></BiShoppingBag> : <Link to="/basket"><BiShoppingBag></BiShoppingBag>
